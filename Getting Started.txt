@@ -1,1 +1,2 @@
 The sole purpose of this file is allowing people to test the editing through webinterface.
+test ok
