@@ -1,0 +1,77 @@
+% Zeichensatz und Sprachpaket
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel} 
+\usepackage{arev}
+\usepackage[T1]{fontenc}
+
+% Seite anpassen
+\usepackage{geometry}	
+\geometry{a4paper, top=12mm, left=18mm, right=18mm, bottom=12mm,
+headsep=10mm, footskip=12mm}
+
+% Einrücken eines neues Absatzes auf 0
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}	
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{1em}{0.3em}
+
+% Unterpunkte in Aufzählungen andere Symbole geben
+%\usepackage{pifont}
+%\renewcommand{\labelitemi}{\ding{104}}
+%\renewcommand{\labelitemii}{\ding{105}}
+\renewcommand*\labelitemii{$\circ$}
+%\renewcommand{\thesection}{\Alph{section}} 
+
+% Farben
+\usepackage{color}
+\usepackage[usenames,dvipsnames, table]{xcolor}
+
+% Um Bilder einzufügen
+\usepackage{graphicx}
+%\usepackage{tabularx}
+
+% Abstand zwischen Aufzählungen kleiner definieren 
+%\let\origitemize\itemize	
+%\def\itemize{\origitemize\itemsep0pt}
+
+% Für TODOs
+\usepackage{todonotes}
+
+% Quellen
+
+%\bibliographystyle{IEEEtranSA}	% english style
+\bibliographystyle{babalpha-fl}	% german style 
+
+
+% Formelzeugs
+\usepackage{amsfonts}   
+\usepackage{amssymb}
+\usepackage{amsmath}
+\def\R{\ensuremath{\mathbb{R}}}
+\def\RR{\ensuremath{\mathcal{R}}}
+\def\C{\ensuremath{\mathbb{C}}}
+\def\CC{\ensuremath{\mathcal{C}}}
+\def\Z{\ensuremath{\mathbb{Z}}}
+\def\N{\ensuremath{\mathbb{N}}}
+\def\F{\ensuremath{\mathbb{F}}}
+\def\dann{\ensuremath{\Rightarrow}}
+\def\gdw{\ensuremath{\Leftrightarrow}}
+\def\tr{\ensuremath{\text{tr}}}
+\def\deg{\ensuremath{\text{deg}}}
+\def\Aut{\ensuremath{\text{Aut}}}
+\def\Abb{\ensuremath{\text{Abb}}}
+
+\usepackage{ntheorem}
+\theorembodyfont{\normalfont}
+\theoremstyle{changebreak} 
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{defi}{Definition}
+
+
+
+
+
+
+
+
