@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20150203145737" title="Area minimasation heuristik for orthogonal graph layout" author="Lea, Lukas, Simon, Jonathan"/>
+<ipe version="70005" creator="Ipe 7.1.6">
+<info created="D:20090429144355" modified="D:20150204215500" title="The Three-Phase Method" author="Jonathan, Michael, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
 <preamble>\usepackage[utf8]{inputenc}
-  \usepackage{amsmath,amssymb}
-  \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
+\usepackage{amsmath,amssymb}
+\renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
 
-  % settings %%%%%%%%%%%%%%%
-  \newcommand{\itemcolor}{KITblue}
-  \newcommand{\name}{Lea, Lukas, Simon, Jonathan}
-  \newcommand{\prestitle}{Path decomposition heuristic}
-  % \german
+% settings %%%%%%%%%%%%%%%
+\hyphenation{formulieren}
+\hyphenation{orthogonale}
 
+\newcommand{\itemcolor}{KITblue}
+\newcommand{\name}{S. Cacean, S. Scheu, C. Voigt,  Jonathan, Michael, Mira}
+\newcommand{\prestitle}{Awesome Group}
+\newcommand{\pressubtitle}{Ein kräftebasierter Ansatz für Layouts mit Gruppen}
+\german
+% \dorothea % activate this only for lecture slides
   </preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -186,7 +190,6 @@ h
 <color name="green" value="0 1 0"/>
 <color name="blue" value="0 0 1"/>
 <color name="yellow" value="1 1 0"/>
-<color name="darkgreen" value="0 0.666 0"/>
 <color name="orange" value="1 0.647 0"/>
 <color name="gold" value="1 0.843 0"/>
 <color name="purple" value="0.627 0.125 0.941"/>
@@ -200,6 +203,7 @@ h
 <color name="darkblue" value="0 0 0.545"/>
 <color name="darkcyan" value="0 0.545 0.545"/>
 <color name="darkgray" value="0.663"/>
+<color name="darkgreen" value="0 0.392 0"/>
 <color name="darkmagenta" value="0.545 0 0.545"/>
 <color name="darkorange" value="1 0.549 0"/>
 <color name="darkred" value="0.545 0 0"/>
@@ -213,13 +217,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
-<textsize name="small" value="\small"/>
-<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
+<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
+<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -313,7 +317,7 @@ h
 h
 </path>
 <text matrix="0.0410872 0 0 0.0410872 627.139 450.083" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
-<text matrix="1 0 0 1 -98 -201.642" pos="106 168" stroke="black" type="minipage" width="497" height="10.7111" depth="0" valign="top" size="verytiny">\name \ -- \prestitle</text>
+<text matrix="1 0 0 1 -98 -201.642" pos="106 168" stroke="black" type="minipage" width="497" height="10.7847" depth="0" valign="top" size="verytiny">\name \ -- \prestitle</text>
 <group matrix="1 0 0 1 129 -9.5">
 <group matrix="0.5 0 0 0.5 265.5 -52.5">
 <path matrix="1 0 0 1 -145 -25" fill="KITblue">
@@ -414,7 +418,7 @@ h
 </group>
 <text matrix="1 0 0 1 -146 -7.60325" pos="719 -26" stroke="black" type="minipage" width="165" height="17.6295" depth="6.164" valign="top" size="verytiny">\algoinstfoot
 
-	</text>
+      </text>
 </group>
 </symbol>
 <symbol name="KITItem(f)">
@@ -1972,6 +1976,106 @@ h
 </path>
 </group>
 </symbol>
+<symbol name="deco/KIT box [blue]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITblue15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [red]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITred15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [palegreen]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITpalegreen15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [yellow]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITyellow15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [green]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITgreen15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
 <pen name="normal" value="1.2"/>
 <pen name="heavier" value="2.4"/>
 <pen name="fat" value="3.6"/>
@@ -2048,13 +2152,13 @@ h
 <textsize name="largebf" value="\bf\large"/>
 <textstretch name="normal" value="2.45"/>
 <textstretch name="large" value="2.45"/>
-<textstretch name="small" value="2.2"/>
-<textstretch name="tiny" value="2.8"/>
 <textstretch name="Large" value="2.2"/>
 <textstretch name="LARGE" value="2.2"/>
 <textstretch name="huge" value="2.2"/>
 <textstretch name="Huge" value="2.2"/>
+<textstretch name="small" value="2.2"/>
 <textstretch name="footnote" value="2"/>
+<textstretch name="tiny" value="2.8"/>
 <textstretch name="verytiny" value="2.3"/>
 <textstretch name="largebf" value="2.45"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
@@ -2065,21 +2169,36 @@ h
 <gridsize name="2 pts" value="2"/>
 <gridsize name="3 pts" value="3"/>
 <preamble>
-      \usepackage{color}
-      \usepackage{pgf}
-      \usepackage[utf8]{inputenc}
+    \usepackage{color}
+    \usepackage{pgf}
+    \usepackage[utf8]{inputenc}
 
-      % language settings
-      \newif\ifgerman%
-      \newcommand{\german}{\germantrue}%
-      \newcommand{\kitlogo}{%
+    % dorothea settings
+    \newif\ifdorothea%
+    \newcommand{\dorothea}{\dorotheatrue}%    
+
+    % language settings
+    \newif\ifgerman%
+    \newcommand{\german}{\germantrue}%
+    \newcommand{\chair}{%
+      \ifdorothea%
+      Prof. Dr. Dorothea Wagner%
+      \else%
+      \ifgerman%
+      Lehrstuhl Algorithmik%
+      \else%
+      Algorithmics Group%
+      \fi%
+      \fi%
+    }
+    \newcommand{\kitlogo}{%
       \ifgerman%
       \ipesymbol{KITLogoDE}{}{}{}\hspace{950pt}%
       \else%
       \ipesymbol{KITLogoEN}{}{}{}\hspace{950pt}%
       \fi%
-      }%
-      \newcommand{\helmholz}{%
+    }%
+    \newcommand{\helmholz}{%
       \ifgerman%
       KIT -- Universität des Landes Baden-Württemberg und\\
       nationales Forschungszentrum in der Helmholtz-Gemeinschaft%
@@ -2087,81 +2206,81 @@ h
       KIT -- University of the State of Baden-Wuerttemberg and\\
       National Laboratory of the Helmholtz Association%
       \fi%
-      }%
-      \newcommand{\algoinst}{%
+    }%
+    \newcommand{\algoinst}{%
       \ifgerman%
       {\sc Institut für Theoretische Informatik $\cdot$
-      Prof. Dr. Dorothea Wagner}%
+        \chair}%
       \else%
       {\sc Institute of Theoretical Informatics $\cdot$
-      Prof. Dr. Dorothea Wagner}%
+        \chair}%
       \fi%
-      }%
-      \newcommand{\algoinstfoot}{%
+    }%
+    \newcommand{\algoinstfoot}{%
       \ifgerman%
       Institut für Theoretische Informatik\\
-      Prof. Dr. Dorothea Wagner
+      \chair%
       \else%
       Institute of Theoretical Informatics\\
-      Prof. Dr. Dorothea Wagner%
+      \chair% 
       \fi%
-      }%
+    }%
 
-      \renewcommand{\familydefault}{\sfdefault}
-      \usepackage[scaled=.92]{helvet}
-      \usepackage[EULERGREEK,eulergreek]{sansmath}
-      \sansmath
-      % \usepackage[scaled=.92]{helvet}
+    \renewcommand{\familydefault}{\sfdefault}
+    \usepackage[scaled=.92]{helvet}
+    \usepackage[EULERGREEK,eulergreek]{sansmath}
+    \sansmath
+    % \usepackage[scaled=.92]{helvet}
 
-      % \renewcommand{\familydefault}{\sfdefault}
-      % \def\rmdefault{phv}
-      % \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
-      % \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
-      % \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
-      % \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
+    % \renewcommand{\familydefault}{\sfdefault}
+    % \def\rmdefault{phv}
+    % \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
+    % \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
+    % \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
+    % \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
 
-      \makeatletter
-      \def\@listI{
-      \leftmargin 1.5em
-      \itemsep 0.2em
-      \parsep 0.2em
-      \topsep 0.2em
-      \partopsep 0.2em}
-      \def\@listii{
-      \leftmargin 1em
-      \itemsep 0.1em
-      \parsep 0.1em
-      \topsep 0.1em
-      \partopsep 0.1em}
-      \makeatother
+    \makeatletter
+    \def\@listI{
+    \leftmargin 1.5em
+    \itemsep 0.2em
+    \parsep 0.2em
+    \topsep 0.2em
+    \partopsep 0.2em}
+    \def\@listii{
+    \leftmargin 1em
+    \itemsep 0.1em
+    \parsep 0.1em
+    \topsep 0.1em
+    \partopsep 0.1em}
+    \makeatother
 
-      \def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+    \def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.3}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
 
-      \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
-    </preamble>
+    \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.1}{\ipesymbol{KITItem(f)}{}{\itemcolor}{}}}}}
+  </preamble>
 <layout paper="800 600" origin="32 69" frame="736 440" crop="no"/>
 <titlestyle pos="0 475" size="largebf" color="black"  valign="baseline"/>
 </ipestyle>
 <page>
 <layer name="title"/>
 <layer name="BACKGROUND"/>
+<layer name="alpha"/>
 <layer name="pagenumbers_format"/>
 <layer name="pagenumbers_dont_count"/>
 <layer name="pagenumbers_page" edit="no"/>
-<view layers="title BACKGROUND" active="title"/>
-<text layer="title" matrix="1 0 0 1 91 -299" pos="213 427" stroke="black" type="label" width="138.466" height="13.123" depth="3.872" valign="bottom" size="small">\today</text>
-<text matrix="1 0 0 1 155 -269" pos="213 427" stroke="black" type="label" width="447.612" height="13.4596" depth="3.036" halign="center" valign="baseline" size="small">\bf Christian, Jonathan, Michael, Mira, Sebastian, Sven
-</text>
-<text layer="pagenumbers_format" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="31.6204" height="7.5578" depth="2.277" halign="center" valign="top" size="verytiny">{\bf [page]}</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 0}</text>
-<path layer="title" matrix="1 0 0 1 2 0" fill="KITblack50">
+<view layers="title BACKGROUND alpha" active="alpha"/>
+<text layer="title" matrix="1 0 0 1 -213 -46" pos="213 427" stroke="black" type="label" width="229.271" height="21.5116" depth="6.116" valign="baseline" size="Large">\bf\prestitle</text>
+<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="577.634" height="13.4464" depth="3.938" valign="bottom" size="small">\bf Seminar Algorithmen zur Visualisierung von Debatten $\,\cdot\,$ 17.02.2014</text>
+<text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="464.961" height="13.4464" depth="3.938" valign="baseline" size="small">\bf \name</text>
+<group layer="BACKGROUND" matrix="1 0 0 1 2 0">
+<path fill="KITblack50">
 -28 212 m
 760 212 l
 760 250 l
 -28 250 l
 h
 </path>
-<path matrix="1 0 0 1 2 0" fill="KITblack15">
+<path fill="KITblack15">
 -13 -22 m
 12 0 0 -12 -13 -10 -25 -10 a
 -25 522 l
@@ -2175,35 +2294,815 @@ h
 -34 531 l
 h
 </path>
-<text matrix="0.0614019 0 0 0.0614019 -12.7365 426.158" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
-<text matrix="1 0 0 1 -96 -201.642" pos="98 168" stroke="black" type="minipage" width="412" height="17.6088" depth="6.164" valign="top" size="verytiny">\helmholz</text>
-<text matrix="1 0 0 1 151 -29.5" transformations="translations" pos="608 -16" stroke="white" type="label" width="105.167" height="13.244" depth="0.176" halign="right" valign="center" size="small">\bf www.kit.edu</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 368" stroke="black" type="minipage" width="736" height="39.116" depth="28.226" valign="top" size="Large">\bf Inkrementeller, kräftebasierter
-Layoutalgorithmus für hierarchische
-Argumentkarten</text>
-<text matrix="1 0 0 1 0 4" transformations="translations" pos="0 240" stroke="white" type="minipage" width="688" height="20.3196" depth="6.356" valign="top" size="tiny">\textsc{Institut für theoretische Informatik $\cdot$  Diplom Inform. Andreas Gemsa, Dr. Ignaz Rutter}\\
-\textsc{Institut für Philosophie $\cdot$  Jun.-Prof. Dr. habil. Gregor Betz}</text>
+<text matrix="0.0614019 0 0 0.0614019 -14.7365 426.158" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
+<text matrix="1 0 0 1 -98 -201.642" pos="98 168" stroke="black" type="minipage" width="412" height="17.5973" depth="6.118" valign="top" size="verytiny">\helmholz</text>
+<text matrix="1 0 0 1 -22 -1" pos="24 232" stroke="white" type="label" width="409.088" height="9.7188" depth="0.168" valign="center" size="tiny">\algoinst</text>
+<text matrix="1 0 0 1 149 -29.5" transformations="translations" pos="608 -16" stroke="white" type="label" width="105.167" height="13.244" depth="0.176" halign="right" valign="center" size="small">\bf www.kit.edu</text>
+</group>
+<text matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="704.361" height="21.5842" depth="6.116" valign="baseline" size="Large">\bf\pressubtitle</text>
+<text layer="pagenumbers_format" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="31.6204" height="7.5578" depth="2.277" halign="center" valign="top" size="verytiny">{\bf [page]}</text>
+<path layer="alpha" matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
+64 384 m
+64 320 l
+96 320 l
+96 384 l
+h
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
+112 272 m
+112 224 l
+144 224 l
+144 272 l
+h
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
+448 304 m
+448 272 l
+496 272 l
+496 304 l
+h
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
+176 224 m
+176 176 l
+224 176 l
+224 224 l
+h
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black">
+80 320 m
+80 304 l
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black">
+96 368 m
+464 368 l
+464 304 l
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black">
+96 336 m
+272 336 l
+272 176 l
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black">
+96 288 m
+448 288 l
+</path>
+<path matrix="1 0 0 1 64 -192" stroke="black">
+96 272 m
+112 272 l
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
+368 272 m
+368 240 l
+400 240 l
+400 272 l
+h
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black">
+144 256 m
+368 256 l
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black">
+432 176 m
+432 256 l
+400 256 l
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black">
+416 176 m
+416 208 l
+224 208 l
+</path>
+<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
+64 304 m
+64 240 l
+96 240 l
+96 304 l
+h
+</path>
+<path stroke="black">
+288 16 m
+400 16 l
+400 0 l
+</path>
+<path stroke="black">
+208 64 m
+416 64 l
+416 0 l
+</path>
+<path stroke="black">
+192 48 m
+192 0 l
+</path>
+<path stroke="black">
+144 64 m
+144 0 l
+</path>
+<path stroke="black">
+528 96 m
+528 0 l
+</path>
+<path matrix="1 0 0 1 0 -160" stroke="black">
+544 256 m
+544 160 l
+</path>
+<path stroke="black">
+160 176 m
+448 176 l
+448 96 l
+</path>
+<path stroke="black">
+448 64 m
+448 0 l
+</path>
+<text matrix="1 0 0 1 -64 -16" transformations="translations" pos="224 128" stroke="red" type="label" width="478.995" height="25.4628" depth="7.744" valign="baseline" size="LARGE">Todo: Passendes Bild einfügen</text>
+<text matrix="1 0 0 1 16 272" transformations="translations" pos="224 128" stroke="red" type="label" width="879.276" height="25.4584" depth="7.26" valign="baseline" size="LARGE">Todo: Passenden Titel finden Edit - Document Properties</text>
+<text matrix="1 0 0 1 -144 144" transformations="translations" pos="224 128" stroke="red" type="label" width="1637.92" height="25.6894" depth="7.744" valign="baseline" size="LARGE">Todo: Namen vervollständigen (Edit -&gt; Document Properties)
+\newline
+am besten nach Nachname/Vorname sortiert</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 0}</text>
+</page>
+<page title="Beispielseite">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="38.073" depth="25.921" valign="top">\begin{itemize}
+\item Stichpunkt 1
+\item Stichpunkt 2
+\end{itemize}</text>
+<text layer="beta" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="16.8977" depth="4.704" valign="top">\begin{itemize}
+\item {\bf Unbeschränktes Wachstumsmodell}
+\end{itemize}</text>
+<path stroke="black" fill="gold">
+48 400 m
+48 336 l
+80 336 l
+80 400 l
+h
+</path>
+<path stroke="black" fill="gold">
+112 400 m
+112 368 l
+144 368 l
+144 400 l
+h
+</path>
+<path stroke="black" fill="gold">
+176 400 m
+176 336 l
+208 336 l
+208 400 l
+h
+</path>
+<path stroke="black">
+80 352 m
+80 352 l
+176 352 l
+176 352 l
+h
+</path>
+<path stroke="black">
+144 384 m
+144 384 l
+176 384 l
+176 384 l
+h
+</path>
+<path stroke="black">
+80 384 m
+80 384 l
+112 384 l
+112 384 l
+h
+</path>
+<text matrix="1 0 0 1 0 -128" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="18.9116" depth="6.6885" valign="top">\begin{itemize}
+\item {\bf Kandinsky Modell}
+\end{itemize}</text>
+<path stroke="black" fill="gold">
+48 272 m
+48 240 l
+80 240 l
+80 272 l
+h
+</path>
+<path stroke="black" fill="gold">
+112 272 m
+112 240 l
+144 240 l
+144 272 l
+h
+</path>
+<path stroke="black" fill="gold">
+176 272 m
+176 240 l
+208 240 l
+208 272 l
+h
+</path>
+<path stroke="black">
+80 256 m
+112 256 l
+</path>
+<path stroke="black">
+144 256 m
+176 256 l
+</path>
+<path stroke="black">
+80 248 m
+96 248 l
+96 232 l
+160 232 l
+160 248 l
+176 248 l
+176 248 l
+</path>
+<text matrix="1 0 0 1 0 -232" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="18.9116" depth="6.6885" valign="top">\begin{itemize}
+\item {\bf Proportionales Wachstumsmodell}
+\end{itemize}</text>
+<path stroke="black" fill="gold">
+48 160 m
+48 96 l
+80 96 l
+80 160 l
+h
+</path>
+<path stroke="black" fill="gold">
+112 160 m
+112 128 l
+144 128 l
+144 160 l
+h
+</path>
+<path stroke="black" fill="gold">
+176 160 m
+176 128 l
+208 128 l
+208 160 l
+h
+</path>
+<path stroke="black">
+80 144 m
+112 144 l
+</path>
+<path stroke="black">
+144 144 m
+176 144 l
+</path>
+<path stroke="black">
+80 112 m
+192 112 l
+192 128 l
+</path>
+<text layer="gamma" matrix="1 0 0 1 0 -112" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="119.148" depth="107.163" valign="top">\begin{itemize}
+\item {\bf Kandinsky Modell}
+\begin{itemize}
+\item Aufspalltung des Rasters in grobe und feine Raster Linien.
+\item Knoten werden auf den groben Linen plaziert.
+\item Kanten werden auf den feinen Linen plaziert.
+\item Durch die Plazierung der Kanten auf den feinen Linien kann es zu sehr vielen Kantenknicken kommen.
+\item Am besten geeigenet für Zeichnungen mit einheitlicher Knotengröße.
+\end{itemize}
+\end{itemize}</text>
+<text layer="delta" matrix="1 0 0 1 0 -352" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="37.0293" depth="24.8675" valign="top">\begin{itemize}
+\item {\bf Proportionales Wachstums Modell}
+\begin{itemize}
+\item Größe der Box nur so groß das alle Kanten Platz finden.
+\end{itemize}
+\end{itemize}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 1}</text>
+</page>
+<page title="Beispielzeichnung">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<path layer="alpha" matrix="1 0 0 1 0 32" stroke="black" fill="gold">
+64 384 m
+64 320 l
+96 320 l
+96 384 l
+h
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" fill="gold">
+112 272 m
+112 224 l
+144 224 l
+144 272 l
+h
+</path>
+<path matrix="1 0 0 1 0 -16" stroke="black" fill="gold">
+64 128 m
+64 64 l
+96 64 l
+96 128 l
+h
+</path>
+<path matrix="1 0 0 1 -32 16" stroke="black" fill="gold">
+256 32 m
+256 0 l
+320 0 l
+320 32 l
+h
+</path>
+<path matrix="1 0 0 1 16 16" stroke="black" fill="gold">
+384 32 m
+384 0 l
+432 0 l
+432 32 l
+h
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" fill="gold">
+448 304 m
+448 272 l
+496 272 l
+496 304 l
+h
+</path>
+<path stroke="black" fill="gold">
+112 176 m
+112 112 l
+144 112 l
+144 176 l
+h
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" fill="gold">
+176 224 m
+176 176 l
+224 176 l
+224 224 l
+h
+</path>
+<path matrix="1 0 0 1 -16 32" stroke="black" fill="gold">
+272 176 m
+272 128 l
+304 128 l
+304 176 l
+h
+</path>
+<path matrix="1 0 0 1 0 48" stroke="black" fill="gold">
+320 112 m
+320 80 l
+368 80 l
+368 112 l
+h
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" fill="gold">
+400 176 m
+400 144 l
+448 144 l
+448 176 l
+h
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+80 320 m
+80 304 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+96 64 m
+208 64 l
+208 176 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+144 128 m
+192 128 l
+192 176 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+128 224 m
+128 144 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+96 48 m
+464 48 l
+464 272 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+96 368 m
+464 368 l
+464 304 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+96 336 m
+272 336 l
+272 176 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+96 288 m
+448 288 l
+</path>
+<path matrix="1 0 0 1 0 16" stroke="black">
+96 272 m
+112 272 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" fill="gold">
+368 272 m
+368 240 l
+400 240 l
+400 272 l
+h
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+288 160 m
+400 160 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+288 144 m
+384 144 l
+384 240 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+224 192 m
+336 192 l
+336 128 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+144 256 m
+368 256 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+352 128 m
+352 240 l
+144 240 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+432 176 m
+432 256 l
+400 256 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+416 176 m
+416 208 l
+224 208 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+144 112 m
+320 112 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" fill="gold">
+64 304 m
+64 240 l
+96 240 l
+96 304 l
+h
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+80 80 m
+80 240 l
+80 240 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+416 16 m
+416 112 l
+368 112 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+432 16 m
+432 144 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+448 0 m
+480 0 l
+480 272 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+288 0 m
+400 0 l
+400 0 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+96 32 m
+240 32 l
+240 16 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+256 16 m
+256 96 l
+144 96 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black">
+272 16 m
+272 128 l
+</path>
+<text layer="beta" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="57.1757" depth="45.08" valign="top">\begin{itemize}
+\item Anschlusspunkte der Kanten.
+\item Festlegung der Knotengrößen.
+\item Zusätzliche Knicke können notwendig sein.
+\end{itemize}</text>
+<text layer="zeta" matrix="1 0 0 1 0 -128" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="104.605" depth="92.5855" valign="top">\begin{itemize}
+\item Besondere Behandlung von Speizialfällen:
+\begin{itemize}
+\item Nur ein Knoten in einer Rasterzeile.
+\item Hamiltonpfade.
+\item Nicht Überlappende Bäume.
+\end{itemize}
+\item Einordnung in diese Spezialfälle sollte heuristisch erfolgen, da die überprüfung teilweise $\mathcal{NP}$-vollständig ist.
+\end{itemize}</text>
+<path layer="gamma" matrix="1 0 0 1 -32 64" stroke="black" fill="gold">
+112 272 m
+112 224 l
+144 224 l
+144 272 l
+h
+</path>
+<path matrix="1 0 0 1 -32 64" stroke="black" fill="gold">
+448 304 m
+448 272 l
+496 272 l
+496 304 l
+h
+</path>
+<path matrix="1 0 0 1 -32 64" stroke="black">
+80 320 m
+80 304 l
+</path>
+<path matrix="1 0 0 1 -32 64" stroke="black" pen="fat">
+96 288 m
+448 288 l
+</path>
+<path matrix="1 0 0 1 -32 48" stroke="black" pen="fat">
+96 272 m
+112 272 l
+</path>
+<path matrix="1 0 0 1 -32 64" stroke="black" fill="gold">
+368 272 m
+368 240 l
+400 240 l
+400 272 l
+h
+</path>
+<path matrix="1 0 0 1 -32 64" stroke="black" pen="fat">
+144 256 m
+368 256 l
+</path>
+<path matrix="1 0 0 1 -32 64" stroke="black">
+432 176 m
+432 256 l
+400 256 l
+</path>
+<path matrix="1 0 0 1 -32 64" stroke="black" fill="gold">
+64 304 m
+64 240 l
+96 240 l
+96 304 l
+h
+</path>
+<path matrix="1 0 0 1 -96 80" stroke="black">
+448 224 m
+448 160 l
+</path>
+<path matrix="1 0 0 1 -112 80" stroke="black">
+544 256 m
+544 160 l
+</path>
+<path matrix="1 0 0 1 -96 80" stroke="black">
+192 208 m
+192 160 l
+</path>
+<path matrix="1 0 0 1 -96 80" stroke="black">
+144 224 m
+144 160 l
+</path>
+<path matrix="1 0 0 1 -80 96" stroke="black">
+192 208 m
+400 208 l
+400 144 l
+</path>
+<text pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="18.8871" depth="6.6885" valign="top">\begin{itemize}
+\item Beispiel Hamiltonpfad
+\end{itemize}</text>
+<text layer="eta" matrix="1 0 0 1 0 -224" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="18.8185" depth="6.5905" valign="top">\begin{itemize}
+\item Beispiel nicht überlappende Bäume
+\end{itemize}</text>
+<path layer="alpha" stroke="black">
+96 384 m
+384 384 l
+384 304 l
+</path>
+<group layer="eta">
+<path matrix="1 0 0 1 0 -16" stroke="black" fill="gold">
+256 128 m
+256 64 l
+288 64 l
+288 128 l
+h
+</path>
+<path matrix="1 0 0 1 48 -16" stroke="black" fill="gold">
+320 128 m
+320 96 l
+352 96 l
+352 128 l
+h
+</path>
+<path matrix="1 0 0 1 32 -16" stroke="black" fill="gold">
+160 128 m
+160 96 l
+192 96 l
+192 128 l
+h
+</path>
+<path matrix="1 0 0 1 16 -16" stroke="black" fill="gold">
+80 96 m
+80 64 l
+112 64 l
+112 96 l
+h
+</path>
+<path stroke="black" arrow="normal/normal">
+368 96 m
+288 96 l
+</path>
+<path stroke="black" arrow="normal/normal">
+224 96 m
+256 96 l
+</path>
+<path stroke="black" arrow="normal/normal">
+128 64 m
+256 64 l
+</path>
+<path stroke="black" arrow="normal/normal">
+288 64 m
+432 64 l
+</path>
+<path fill="KITyellow70">
+64 128 m
+64 48 l
+96 48 l
+96 128 l
+h
+</path>
+<path fill="KITyellow70">
+192 160 m
+192 128 l
+288 128 l
+288 160 l
+h
+</path>
+<path fill="KITyellow70">
+192 128 m
+192 112 l
+224 112 l
+224 128 l
+h
+</path>
+<path fill="KITyellow70">
+304 160 m
+304 112 l
+400 112 l
+400 160 l
+h
+</path>
+<path fill="KITyellow70">
+400 160 m
+400 80 l
+432 80 l
+432 160 l
+h
+</path>
+<path fill="KITyellow70">
+192 160 m
+192 80 l
+176 80 l
+176 160 l
+h
+</path>
+<path fill="KITyellow70">
+96 128 m
+96 80 l
+160 80 l
+160 128 l
+h
+</path>
+<path fill="KITyellow70">
+64 160 m
+64 128 l
+160 128 l
+160 160 l
+h
+</path>
+<path stroke="black">
+96 48 m
+64 48 l
+64 160 l
+160 160 l
+160 80 l
+128 80 l
+</path>
+<path stroke="black">
+192 80 m
+176 80 l
+176 160 l
+288 160 l
+288 128 l
+224 128 l
+224 112 l
+</path>
+<path stroke="black">
+368 112 m
+304 112 l
+304 160 l
+432 160 l
+432 80 l
+400 80 l
+400 80 l
+</path>
+</group>
+<path layer="delta" matrix="1 0 0 1 -96 80" stroke="black">
+544 256 m
+544 160 l
+</path>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 2}</text>
 </page>
 <page title="Edit page title [strg] + [p]">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
 <text layer="alpha" transformations="translations" pos="32 416" stroke="black" type="label" width="317.16" height="16.2215" depth="4.998" valign="baseline">Dann [strg]+[L] zum kompilieren</text>
 <text transformations="translations" pos="80 320" stroke="black" type="minipage" width="464" height="31.4335" depth="19.257" valign="top">Drücke [s] für Auswahlmaus, klick mich an und öffne Edit Window mit [strg] + [e]</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 3}</text>
 </page>
-<page title="Problemstellung">
+<page title="Slide Title" section="">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-</page>
-<page title="Algorithmus - Idee">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-</page>
-<page title="Algorithmus - Schritte">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-</page>
-<page title="Bla">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha beta pagenumbers_page" active="beta"/>
+<view layers="alpha gamma pagenumbers_page" active="gamma"/>
+<view layers="alpha delta pagenumbers_page" active="delta"/>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+0 104 m
+728 104 l
+8 0 0 -8 728 96 736 96 a
+736 37.5006 l
+8 37.5006 l
+8 0 0 -8 8 45.5006 0 45.5006 a
+h
+</path>
+</group>
+<text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="141.135" depth="129.213" valign="top">Settings that can be changed in the document properties\\
+(Edit$\rightarrow$Document properties or press Ctrl+Shift+P):
+\begin{itemize}
+\item change the color of the item bullets:
+  \begin{itemize}
+  \item change definition of \textbackslash{itemcolor} (for example to
+    KITgreen)
+  \end{itemize}
+\item change name and title in the footer:
+  \begin{itemize}
+  \item change definition of commands \textbackslash{}name and
+    \textbackslash{}prestitle
+  \end{itemize}
+\item change the language:
+  \begin{itemize}
+  \item comment or uncomment the command \textbackslash{german}
+  \end{itemize}
+\end{itemize}</text>
+<group layer="gamma" matrix="1 0 0 1 0 32" pin="h">
+<path fill="KITblue">
+0 63.0802 m
+0 92 l
+726 92 l
+731 92 736 87 736 82 c
+736 63.0802 l
+h
+</path>
+<path fill="KITblue15">
+736 63.0802 m
+736 1.28581 l
+10 1.28581 l
+5 1.28581 0 6.28581 0 11.2858 c
+0 63.0802 l
+h
+</path>
+<text transformations="translations" pos="6.00005 85.9999" stroke="white" type="minipage" width="724" height="14.4133" depth="2.1805" valign="top">Theorem</text>
+<text transformations="translations" pos="6.00005 57.0801" stroke="black" type="minipage" width="724" height="31.5903" depth="19.404" valign="top">\textsc{FlexDraw} is NP-complete even for instances of size $n$ with
+      $O(n^\varepsilon)$ inflexible edges with pairwise distance
+      $\Omega(n^{1-\varepsilon})$.
+      </text>
+</group>
+<text layer="alpha" matrix="1 0 0 1 0 -282" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="16.7972" depth="4.557" valign="top">To modify the slide title, press Ctrl+P.</text>
+<text layer="gamma" matrix="1 0 0 1 507.228 -95.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="315.187" height="13.112" depth="3.784" halign="right" valign="baseline" size="small">box created with the presentation ipelet</text>
+<text matrix="1 0 0 1 507.228 -116.643" transformations="translations" pos="224 112" stroke="black" type="label" width="436.482" height="10.81" depth="3.26" halign="right" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Graph\_Ipelet/\#presentation-ipelet</text>
+<text layer="delta" matrix="1 0 0 1 -223.772 -60.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="415.507" height="13.123" depth="4.026" valign="baseline" size="small">page numbers created with the Pagenumbers Ipelet</text>
+<text matrix="1 0 0 1 -223.772 -80.643" transformations="translations" pos="224 112" stroke="black" type="label" width="357.644" height="10.81" depth="3.26" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Pagenumbers\_Ipelet/</text>
+<path stroke="black" pen="heavier" arrow="normal/normal">
+-1.78204 49.5567 m
+-18.5764 30.261
+-12.8592 -27.6261 s
+</path>
+<text layer="beta" matrix="1 0 0 1 8 96" transformations="translations" pos="0 0" stroke="black" type="minipage" width="720" height="31.3404" depth="19.159" valign="top">To (semi-)automatically surround objects with simple KIT boxes use the
+decorator ipelet.  You can even define your own box types.
+</text>
+<text matrix="1 0 0 1 176.228 -94.643" transformations="translations" pos="224 112" stroke="black" type="label" width="331.32" height="10.81" depth="3.26" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Decorator\_Ipelet/</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 4}</text>
 </page>
 </ipe>
