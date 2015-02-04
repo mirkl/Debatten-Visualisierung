@@ -21,13 +21,95 @@
 
 \listoftodos
 
-\section{Einleitung}
-Blabliblu.
-
 \todo[inline]{Alles}
+\section{Einleitung}
+% Darstellung von Argumentkarten
+% - Was sind Argumentkarten?
+% - Wieso will man sie darstellen?
+
+\section{Problemstellung}
+% Layoutproblem
+% - Gegeben/Eingabe: 
+	% Graph mit Knoten V, welche Größe besitzen, und gerichteten gefärbten Kanten, 
+	% sowie azyklische hierarchische Struktur von Gruppen von Knoten und Gruppen
+	% Anfangslayout (!?)
+% - Vorgaben an Layout: 
+	% Zeichenkonventionen, hard constraints:
+	% - Knoten und Knoten überschneiden sich nicht (jedoch dürfen Kanten Gruppen schneiden, wenn sie zu Element der Gruppe gehören)
+	% - Gruppen umschließen alle ihre Elemente (welche zusammengeklappt halt in einem Punkt zusammenfallen)
+	% Ästhetikkritieren
+	% - Kreuzungsminimierung
+	% - gleichmäßige Kantenlängen (?)
+	% - Wendepunktminimierung von Kanten
+	% - Struktur hervorheben in Gruppen (?)
+	% Lokale Nebenbedingungen
+	% - Nummerierung von Nachbarknoten im Layout repräsentieren
+	
+
+% Verhalten beim Öffnen oder Schließen von Gruppen
+% - Vorgaben an Verhalten: 
+	% Ästhetikkritieren
+	% - relative Positionen von Knoten und Gruppen verändern sich nur wenig
+	% - Stuktur vor Zustandsänderung bleibt ähnlich und wiedererkennbar
+	
+% Gewählter Zeichenstil
+% - Argumente als Rechtecke (mit fester Breite?)
+% - Gruppen als Kreise
+% - Kanten als ``glatte'' Kurven (bis zu welchem Grad?)
+% - Kanten in Gruppen rein/aus Gruppe raus zu/von inneren Elementen nur über Ports
+
+
 \section{Algorithmus}
+% Idee für Layout: 
+% - Gruppenelemente in Blase passen
+% - festes Layout pro Hierarchiestufe berechnen
+% - Layouts in Gruppen richten sich nach Ports aus Layout von Stufe darüber
+% - Layouts niedrigerer Stufe beeinflussen Layouts höherer Stufe nur durch benötigten Platz
+	
+		% bottom-up und top-down
+	% (Layoutalgorithmus hierbei egtl frei wählbar, kräftebasiert aber besser in Hinsicht auf Verhalten Algorithmus mit Ankern)
+	% bottom-up
+		% Berechne Layouts pro Gruppe auf niederigster Stufe
+		% versuche hierbei Fläche klein zu halten bzw Elemente in Kreis zu zwingen
+		% Berechne die approximierte resultierende benötigte Fläche für Gruppe
+	
+		% Benutze appr. benötigte Fläche für Wiederholung des Schritts auf Stufe höher (bis auf letzte)
 
+	% top-down
+		% (hier noch zu entscheiden ob so wie beschrieben oder mit Gruppen offen)
+		% schliese alle Gruppen und berechne approximierte, logarithmisch abgeschwächte Abstoßungsfaktor anhand von benötigter Größe
+		% berechne Layout auf oberster Stufe
+		% Lege Ports für Gruppen auf oberster Stufe fest
+		
+		% berechne iterativ absteigend Layouts in Gruppen mit festgelegten Ports
 
+% Idee für Verhalten: Anker
+% was passiert, wenn Gruppe geöffnet oder geschlossen wird?
+% - jedes Element auf oberster Ebene bekommt festen aber schwachen Anker an Startposition von Anfangslayout um immer dazu ähnlich zu bleiben
+% - jedes Element auf gleicher Ebene wie veränderte Gruppe bekommt einen Anker an aktueller Position
+	% geöffnete Gruppe stoßt alle Elemente ab, sodass sie genug Platz hat.  Rest auch kräftebasiert um Ähnlichkeit zu Layout davor zu bewahren
+	% geschlossene Gruppe stoßt nun Elemente weniger ab. Rest wieder kräftebasiert um Ähnlichkeit zu Layout davor zu bewahren
+% - Ist geänderte Gruppe nicht auf oberster Ebene, so wiederholt sich der Prozess iterativ nach oben, da übergeordnete Gruppen auch mehr Platz brauen oder freigeben
+
+% - Erweiterungsmöglichkeit: Anker von jedem Schritt speichern, jedoch pro Schritt abschwächen
+
+\section{Evaluation und Vergleich zu anderen Lösungsansätzen}
+% zu vergleichen mit hierarchischem Layout und alles kräftebasiert
+
+% gesammelte Argumente
+	% KB alles kräftebasiert, HS hierarchisch/''Stufen''-Layout
+% + Gruppen vorallem semantisch organisiert, weniger strukturell als bei KB
+% + Änderungskonstanz der Gruppen (innerhalb von Gruppe) als bei KB
+% - komplexer als KB
+% + Gruppen überschneiden sich nicht wie bzw einfach zu getrennt zu halten als bei KB 
+% + HS ist nur ohne Zykel gut umsetzbar
+% + komptakter als HS
+% - Struktur evtl nicht so sichtbar wie bei HS aber auch wie bei KB
+% + iterativ anwendbar
+% + schöner :)
+% o Gruppen im Vordergrund der Darstellung durch Ports, nicht Knoten
+% o Kantenrounting nicht unbedingt trivial
+% 
 
 \section{Quellen}
 \bibliography{SeminarAlgoQuellen}
