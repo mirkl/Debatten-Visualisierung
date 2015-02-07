@@ -21,13 +21,17 @@
 
 \listoftodos
 
-\todo[inline]{Alles}
 \section{Einleitung}
+\todo[inline]{Motivation schreiben}
 % Darstellung von Argumentkarten
 % - Was sind Argumentkarten?
 % - Wieso will man sie darstellen?
 
+% - Wieso Gruppen?
+
+% - Wieso Layout beibehalten? -> Mentale Karte
 \section{Problemstellung}
+\todo[inline]{Problem definieren, Layoutproblem und Subprobleme, Layoutanspassungsproblem}
 % Layoutproblem
 % - Gegeben/Eingabe: 
 	% Graph mit Knoten V, welche Größe besitzen, und gerichteten gefärbten Kanten, 
@@ -59,12 +63,15 @@
 % - Kanten in Gruppen rein/aus Gruppe raus zu/von inneren Elementen nur über Ports
 
 
-\section{Algorithmus}
+
+\section{Algorithmus} % High-level description
+\todo[inline]{Textuelle Beschreibung, Grafiken}
 % Idee für Layout: 
 % - Gruppenelemente in Blase passen
 % - festes Layout pro Hierarchiestufe berechnen
 % - Layouts in Gruppen richten sich nach Ports aus Layout von Stufe darüber
 % - Layouts niedrigerer Stufe beeinflussen Layouts höherer Stufe nur durch benötigten Platz
+	% Stichwort: uniform scaling
 	
 		% bottom-up und top-down
 	% (Layoutalgorithmus hierbei egtl frei wählbar, kräftebasiert aber besser in Hinsicht auf Verhalten Algorithmus mit Ankern)
@@ -76,12 +83,47 @@
 		% Benutze appr. benötigte Fläche für Wiederholung des Schritts auf Stufe höher (bis auf letzte)
 
 	% top-down
-		% (hier noch zu entscheiden ob so wie beschrieben oder mit Gruppen offen)
-		% schliese alle Gruppen und berechne approximierte, logarithmisch abgeschwächte Abstoßungsfaktor anhand von benötigter Größe
+		% (hier noch zu entscheiden ob mit Gruppen offen oder zu)
+			% (für Variante zu: schliese alle Gruppen und berechne approximierte, logarithmisch abgeschwächte Abstoßungsfaktor anhand von benötigter Größe)
 		% berechne Layout auf oberster Stufe
 		% Lege Ports für Gruppen auf oberster Stufe fest
 		
 		% berechne iterativ absteigend Layouts in Gruppen mit festgelegten Ports
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\Ein{Graph $G=(V,E)$ mit Gruppen $S$ } % mit Koten $V$ mit Größe, gerichteten \& gefärbten Kanten $E$, Mengen $S$ von Knoten und Elementen aus $S$
+\Aus{Gruppen-hierarchisches Layout von $G$ } % mit diesen und jenen Eigenschaften, evtl Name einführen für Referenzierung
+$i = $höchste Stufe einer Gruppe \;
+\Solange{$i \geq 0$}{ % benötigt, dass oberste Ebene auch Gruppe
+  \Fuer{Jede Gruppe $S$ auf Stufe $i$} {
+	berechnete Layout der Gruppe $S$\;
+	berechne benötite Fläche des Gruppenlayouts\;	
+  }
+  $i= i - 1$\;
+}
+Lege Ports für Gruppen auf Stufe 1 fest\;
+$i = 1$\;
+\Solange{$i \leq$ Anzahl Stufen}{ % benötigt, dass oberste Ebene auch Gruppe
+  \Fuer{Jede Gruppe $S$ auf Stufe $i$} {
+	berechnete Layout der Gruppe $S$ unter Berücksichtigung der Ports\;
+	Lege Ports für Gruppen auf Stufe $i+1$ fest;
+  }
+  $i= i + 1$\;
+}
+\caption{Layoutalgorithmus}
+\end{algorithm}
+
+
+\subsection{Layout in Gruppen in abhängigkeit von Ports}
+% Problem: Layout eines Graphens (mit Labelknoten) innerhalb eines Kreises mit Ports für ausgehende kanten
+% Äquivalent: Layout eines Graphens mit punktförmigen Knoten auf Kreis und gelabelten Knoten innerhalb des Kreises
+\todo[inline]{Problemreduktion beschreiben, Lösungsvorschlag}
+
+\section{Layout-Anpassung beim Öffnen oder Schließen einer Gruppe}
+% Removing node intersections when changing the size of a node while keeping the mental map
+% Problemabstraktion: Auflösen von Knotenlabelüberschneidung nach Größenveränderung eines Knotenlabes unter Beibehaltung der mentalen Karte
+\todo[inline]{Problemreduktion beschreiben, Lösungsvorschlag}
 
 % Idee für Verhalten: Anker
 % was passiert, wenn Gruppe geöffnet oder geschlossen wird?
@@ -94,8 +136,14 @@
 % - Erweiterungsmöglichkeit: Anker von jedem Schritt speichern, jedoch pro Schritt abschwächen
 
 \section{Evaluation und Vergleich zu anderen Lösungsansätzen}
+\subsection{Hierarchisches Layout}
+\todo[inline]{Beschreibung hierarchische Layout Variante}
+\subsection{Gänzlich kräftebasiertes Layout} % TODO Besseren Namen finden
+\todo[inline]{Beschreibung kräftebasierte Layout Variante}
 % zu vergleichen mit hierarchischem Layout und alles kräftebasiert
 
+\subsection{Vergleich}
+\todo[inline]{Vergleich, Evaluation schreiben}
 % gesammelte Argumente
 	% KB alles kräftebasiert, HS hierarchisch/''Stufen''-Layout
 % + Gruppen vorallem semantisch organisiert, weniger strukturell als bei KB
