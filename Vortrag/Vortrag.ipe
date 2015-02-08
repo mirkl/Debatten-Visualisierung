@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.6">
-<info created="D:20090429144355" modified="D:20150204215500" title="The Three-Phase Method" author="Jonathan, Michael, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
+<ipe version="70005" creator="Ipe 7.1.4">
+<info created="D:20090429144355" modified="D:20150208222727" title="The Three-Phase Method" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -217,13 +217,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
-<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
-<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -2152,13 +2152,13 @@ h
 <textsize name="largebf" value="\bf\large"/>
 <textstretch name="normal" value="2.45"/>
 <textstretch name="large" value="2.45"/>
+<textstretch name="small" value="2.2"/>
+<textstretch name="tiny" value="2.8"/>
 <textstretch name="Large" value="2.2"/>
 <textstretch name="LARGE" value="2.2"/>
 <textstretch name="huge" value="2.2"/>
 <textstretch name="Huge" value="2.2"/>
-<textstretch name="small" value="2.2"/>
 <textstretch name="footnote" value="2"/>
-<textstretch name="tiny" value="2.8"/>
 <textstretch name="verytiny" value="2.3"/>
 <textstretch name="largebf" value="2.45"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
@@ -2301,122 +2301,9 @@ h
 </group>
 <text matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="704.361" height="21.5842" depth="6.116" valign="baseline" size="Large">\bf\pressubtitle</text>
 <text layer="pagenumbers_format" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="31.6204" height="7.5578" depth="2.277" halign="center" valign="top" size="verytiny">{\bf [page]}</text>
-<path layer="alpha" matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
-64 384 m
-64 320 l
-96 320 l
-96 384 l
-h
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
-112 272 m
-112 224 l
-144 224 l
-144 272 l
-h
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
-448 304 m
-448 272 l
-496 272 l
-496 304 l
-h
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
-176 224 m
-176 176 l
-224 176 l
-224 224 l
-h
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black">
-80 320 m
-80 304 l
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black">
-96 368 m
-464 368 l
-464 304 l
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black">
-96 336 m
-272 336 l
-272 176 l
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black">
-96 288 m
-448 288 l
-</path>
-<path matrix="1 0 0 1 64 -192" stroke="black">
-96 272 m
-112 272 l
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
-368 272 m
-368 240 l
-400 240 l
-400 272 l
-h
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black">
-144 256 m
-368 256 l
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black">
-432 176 m
-432 256 l
-400 256 l
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black">
-416 176 m
-416 208 l
-224 208 l
-</path>
-<path matrix="1 0 0 1 64 -176" stroke="black" fill="gold">
-64 304 m
-64 240 l
-96 240 l
-96 304 l
-h
-</path>
-<path stroke="black">
-288 16 m
-400 16 l
-400 0 l
-</path>
-<path stroke="black">
-208 64 m
-416 64 l
-416 0 l
-</path>
-<path stroke="black">
-192 48 m
-192 0 l
-</path>
-<path stroke="black">
-144 64 m
-144 0 l
-</path>
-<path stroke="black">
-528 96 m
-528 0 l
-</path>
-<path matrix="1 0 0 1 0 -160" stroke="black">
-544 256 m
-544 160 l
-</path>
-<path stroke="black">
-160 176 m
-448 176 l
-448 96 l
-</path>
-<path stroke="black">
-448 64 m
-448 0 l
-</path>
-<text matrix="1 0 0 1 -64 -16" transformations="translations" pos="224 128" stroke="red" type="label" width="478.995" height="25.4628" depth="7.744" valign="baseline" size="LARGE">Todo: Passendes Bild einfügen</text>
-<text matrix="1 0 0 1 16 272" transformations="translations" pos="224 128" stroke="red" type="label" width="879.276" height="25.4584" depth="7.26" valign="baseline" size="LARGE">Todo: Passenden Titel finden Edit - Document Properties</text>
-<text matrix="1 0 0 1 -144 144" transformations="translations" pos="224 128" stroke="red" type="label" width="1637.92" height="25.6894" depth="7.744" valign="baseline" size="LARGE">Todo: Namen vervollständigen (Edit -&gt; Document Properties)
+<text layer="alpha" matrix="1 0 0 1 -112 -16" transformations="translations" pos="224 128" stroke="red" type="label" width="478.995" height="25.4628" depth="7.744" valign="baseline" size="LARGE">Todo: Passendes Bild einfügen</text>
+<text matrix="1 0 0 1 -224 288" transformations="translations" pos="224 128" stroke="red" type="label" width="879.276" height="25.4584" depth="7.26" valign="baseline" size="LARGE">Todo: Passenden Titel finden Edit - Document Properties</text>
+<text matrix="1 0 0 1 -224 128" transformations="translations" pos="224 128" stroke="red" type="label" width="1637.92" height="25.6894" depth="7.744" valign="baseline" size="LARGE">Todo: Namen vervollständigen (Edit -&gt; Document Properties)
 \newline
 am besten nach Nachname/Vorname sortiert</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 0}</text>
@@ -3104,5 +2991,251 @@ decorator ipelet.  You can even define your own box types.
 </text>
 <text matrix="1 0 0 1 176.228 -94.643" transformations="translations" pos="224 112" stroke="black" type="label" width="331.32" height="10.81" depth="3.26" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Decorator\_Ipelet/</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 4}</text>
+</page>
+<page title="Problemszenario">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" matrix="1 0 0 1 -32 -16" transformations="translations" pos="48 400" stroke="black" type="label" width="288.282" height="16.5473" depth="4.998" valign="baseline">Argument Karte mit Gruppen</text>
+</page>
+<page title="Algorithmus">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Algorithmus Teil 1 &quot;bottom-up&quot;">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<path layer="gamma" matrix="1 0 0 1 480 240" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 316 -12" stroke="KITred" arrow="normal/normal">
+152 260 m
+212 316 l
+</path>
+<path layer="alpha" matrix="1 0 0 1 8 48" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 104 48" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<text layer="beta" matrix="1 0 0 1 28 84" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.3527" depth="19.159" valign="top" style="center">2. Berechne\\ benötigte Fläche</text>
+<path layer="alpha" matrix="1 0 0 1 0 8" stroke="KITgreen" arrow="normal/normal">
+96 96 m
+72 112 l
+</path>
+<path matrix="1 0 0 1 0 8" stroke="KITgreen" arrow="normal/normal">
+192 88 m
+168 104 l
+</path>
+<path matrix="1 0 0 1 100 8" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 0 8" stroke="KITgreen" arrow="normal/normal">
+192 124 m
+168 112 l
+</path>
+<path matrix="1 0 0 1 144 60" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 40 24" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 0 8" stroke="KITred" arrow="normal/normal">
+64 72 m
+88 88 l
+</path>
+<path matrix="1 0 0 1 0 8" stroke="KITred" arrow="normal/normal">
+56 80 m
+60 104 l
+</path>
+<path matrix="1 0 0 1 0 8" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 0 8" stroke="KITgreen" arrow="normal/normal">
+156 80 m
+160 104 l
+</path>
+<text matrix="1 0 0 1 8 8" transformations="translations" pos="232 96" stroke="black" type="label" width="18.7278" height="2.3814" depth="0" valign="baseline">...</text>
+<path layer="gamma" matrix="1 0 0 1 316 -12" stroke="KITred" arrow="normal/normal">
+136 356 m
+212 324 l
+</path>
+<path matrix="1 0 0 1 388 272" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 140 -4" stroke="KITgreen" arrow="normal/normal">
+496 272 m
+404 316 l
+</path>
+<path matrix="1 0 0 1 140 -4" stroke="KITgreen" arrow="normal/normal">
+432 396 m
+396 324 l
+</path>
+<path matrix="1 0 0 1 500 300" stroke="black" fill="KITred50">
+44 -8 8 44 72 92 e
+</path>
+<path matrix="1 0 0 1 140 -4" stroke="KITgreen" arrow="normal/normal">
+500 272 m
+452 356 l
+</path>
+<path matrix="1 0 0 1 464 172" stroke="black" fill="KITyellow70">
+36 32 -32 36 176 100 e
+</path>
+<path matrix="1 0 0 1 316 -12" stroke="KITgreen" arrow="normal/normal">
+148 260 m
+128 348 l
+</path>
+<path matrix="1 0 0 1 396 160" stroke="black" fill="KITgreen50">
+44 -8 8 44 72 92 e
+</path>
+<text matrix="1 0 0 1 236 164" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="29.0276" depth="16.856" valign="top">3. Berechne Layout\\ eine Stufe höher</text>
+<path layer="delta" stroke="black" arrow="normal/normal">
+516 188 m
+153.192 0 0 -153.192 390.967 276.513 272 180 a
+</path>
+<text matrix="1 0 0 1 440 -160" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.1836" depth="19.012" valign="top">4. Wiederhole Iterativ \\pro Stufe</text>
+<path layer="beta" matrix="1 0 0 1 44 140" stroke="black" fill="KITyellow70">
+36 32 -32 36 176 100 e
+</path>
+<path matrix="1 0 0 1 44 140" stroke="black" fill="KITgreen50">
+44 -8 8 44 72 92 e
+</path>
+<path matrix="1 0 0 1 52 180" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 148 180" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 44 140" stroke="KITgreen" arrow="normal/normal">
+96 96 m
+72 112 l
+</path>
+<path matrix="1 0 0 1 44 140" stroke="KITgreen" arrow="normal/normal">
+192 88 m
+168 104 l
+</path>
+<path matrix="1 0 0 1 144 140" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 44 140" stroke="KITgreen" arrow="normal/normal">
+192 124 m
+168 112 l
+</path>
+<path matrix="1 0 0 1 188 192" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 84 156" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 44 140" stroke="KITred" arrow="normal/normal">
+64 72 m
+88 88 l
+</path>
+<path matrix="1 0 0 1 44 140" stroke="KITred" arrow="normal/normal">
+56 80 m
+60 104 l
+</path>
+<path matrix="1 0 0 1 44 140" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 44 140" stroke="KITgreen" arrow="normal/normal">
+156 80 m
+160 104 l
+</path>
+<text matrix="1 0 0 1 44 140" transformations="translations" pos="232 96" stroke="black" type="label" width="18.7278" height="2.3814" depth="0" valign="baseline">...</text>
+<text layer="alpha" matrix="1 0 0 1 36 8" transformations="translations" pos="0 48" stroke="black" type="minipage" width="252" height="29.1354" depth="16.9295" valign="top" style="center">1. Berechne Layout auf\\ unterster Ebene</text>
+<path matrix="1 0 0 1 4 4" stroke="darkgray">
+120 136 m
+120 64 l
+</path>
+<path matrix="1 0 0 1 104 4" stroke="darkgray">
+120 136 m
+120 64 l
+</path>
+<path layer="beta" stroke="black" arrow="normal/normal">
+140 140 m
+156 188 l
+</path>
+<path layer="gamma" stroke="black" arrow="normal/normal">
+308 296 m
+388 308 l
+</path>
+</page>
+<page title="Algorithmus top-down">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Layout von Gruppen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Layoutanpassung bei Interaktion">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Alternative Lösungsansätze">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
 </page>
 </ipe>
