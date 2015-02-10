@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20150208222727" title="The Three-Phase Method" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
+<info created="D:20090429144355" modified="D:20150210132636" title="The Three-Phase Method" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -11,7 +11,7 @@
 \hyphenation{orthogonale}
 
 \newcommand{\itemcolor}{KITblue}
-\newcommand{\name}{S. Cacean, S. Scheu, C. Voigt,  Jonathan, Michael, Mira}
+\newcommand{\name}{S. Cacean, S. Scheu, C. Voigt,  J. Klawitter, Michael, Mira}
 \newcommand{\prestitle}{Awesome Group}
 \newcommand{\pressubtitle}{Ein kräftebasierter Ansatz für Layouts mit Gruppen}
 \german
@@ -2271,7 +2271,7 @@ h
 <view layers="title BACKGROUND alpha" active="alpha"/>
 <text layer="title" matrix="1 0 0 1 -213 -46" pos="213 427" stroke="black" type="label" width="229.271" height="21.5116" depth="6.116" valign="baseline" size="Large">\bf\prestitle</text>
 <text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="577.634" height="13.4464" depth="3.938" valign="bottom" size="small">\bf Seminar Algorithmen zur Visualisierung von Debatten $\,\cdot\,$ 17.02.2014</text>
-<text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="464.961" height="13.4464" depth="3.938" valign="baseline" size="small">\bf \name</text>
+<text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="479.387" height="13.4464" depth="3.938" valign="baseline" size="small">\bf \name</text>
 <group layer="BACKGROUND" matrix="1 0 0 1 2 0">
 <path fill="KITblack50">
 -28 212 m
@@ -2301,8 +2301,7 @@ h
 </group>
 <text matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="704.361" height="21.5842" depth="6.116" valign="baseline" size="Large">\bf\pressubtitle</text>
 <text layer="pagenumbers_format" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="31.6204" height="7.5578" depth="2.277" halign="center" valign="top" size="verytiny">{\bf [page]}</text>
-<text layer="alpha" matrix="1 0 0 1 -112 -16" transformations="translations" pos="224 128" stroke="red" type="label" width="478.995" height="25.4628" depth="7.744" valign="baseline" size="LARGE">Todo: Passendes Bild einfügen</text>
-<text matrix="1 0 0 1 -224 288" transformations="translations" pos="224 128" stroke="red" type="label" width="879.276" height="25.4584" depth="7.26" valign="baseline" size="LARGE">Todo: Passenden Titel finden Edit - Document Properties</text>
+<text layer="alpha" matrix="1 0 0 1 -224 288" transformations="translations" pos="224 128" stroke="red" type="label" width="879.276" height="25.4584" depth="7.26" valign="baseline" size="LARGE">Todo: Passenden Titel finden Edit - Document Properties</text>
 <text matrix="1 0 0 1 -224 128" transformations="translations" pos="224 128" stroke="red" type="label" width="1637.92" height="25.6894" depth="7.744" valign="baseline" size="LARGE">Todo: Namen vervollständigen (Edit -&gt; Document Properties)
 \newline
 am besten nach Nachname/Vorname sortiert</text>
@@ -2914,7 +2913,7 @@ h
 <text transformations="translations" pos="80 320" stroke="black" type="minipage" width="464" height="31.4335" depth="19.257" valign="top">Drücke [s] für Auswahlmaus, klick mich an und öffne Edit Window mit [strg] + [e]</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 3}</text>
 </page>
-<page title="Slide Title" section="">
+<page title="Slide Title">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
@@ -2979,8 +2978,7 @@ h
 <text layer="alpha" matrix="1 0 0 1 0 -282" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="16.7972" depth="4.557" valign="top">To modify the slide title, press Ctrl+P.</text>
 <text layer="gamma" matrix="1 0 0 1 507.228 -95.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="315.187" height="13.112" depth="3.784" halign="right" valign="baseline" size="small">box created with the presentation ipelet</text>
 <text matrix="1 0 0 1 507.228 -116.643" transformations="translations" pos="224 112" stroke="black" type="label" width="436.482" height="10.81" depth="3.26" halign="right" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Graph\_Ipelet/\#presentation-ipelet</text>
-<text layer="delta" matrix="1 0 0 1 -223.772 -60.4874" transformations="translations" pos="224 112" stroke="black" type="label" width="415.507" height="13.123" depth="4.026" valign="baseline" size="small">page numbers created with the Pagenumbers Ipelet</text>
-<text matrix="1 0 0 1 -223.772 -80.643" transformations="translations" pos="224 112" stroke="black" type="label" width="357.644" height="10.81" depth="3.26" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Pagenumbers\_Ipelet/</text>
+<text layer="delta" matrix="1 0 0 1 -223.772 -80.643" transformations="translations" pos="224 112" stroke="black" type="label" width="357.644" height="10.81" depth="3.26" valign="baseline" size="footnote">https://sourceforge.net/p/ipe7/wiki/Pagenumbers\_Ipelet/</text>
 <path stroke="black" pen="heavier" arrow="normal/normal">
 -1.78204 49.5567 m
 -18.5764 30.261
@@ -3125,12 +3123,12 @@ h
 <path matrix="1 0 0 1 396 160" stroke="black" fill="KITgreen50">
 44 -8 8 44 72 92 e
 </path>
-<text matrix="1 0 0 1 236 164" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="29.0276" depth="16.856" valign="top">3. Berechne Layout\\ eine Stufe höher</text>
+<text matrix="1 0 0 1 236 164" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="29.0276" depth="16.856" valign="top" style="center">3. Berechne Layout\\ eine Stufe höher</text>
 <path layer="delta" stroke="black" arrow="normal/normal">
 516 188 m
 153.192 0 0 -153.192 390.967 276.513 272 180 a
 </path>
-<text matrix="1 0 0 1 440 -160" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.1836" depth="19.012" valign="top">4. Wiederhole Iterativ \\pro Stufe</text>
+<text matrix="1 0 0 1 424 -144" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.1836" depth="19.012" valign="top" style="center">4. Wiederhole \\iterativ pro Stufe</text>
 <path layer="beta" matrix="1 0 0 1 44 140" stroke="black" fill="KITyellow70">
 36 32 -32 36 176 100 e
 </path>
@@ -3221,10 +3219,229 @@ h
 308 296 m
 388 308 l
 </path>
+<path layer="delta" matrix="1 0 0 1 144 20" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 188 152" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
 </page>
-<page title="Algorithmus top-down">
+<page title="Algorithmus Teil 2 &quot;top-down&quot;">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<path layer="alpha" matrix="1 0 0 1 96 156" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 -68 -96" stroke="KITred" arrow="normal/normal">
+152 260 m
+212 316 l
+</path>
+<path matrix="1 0 0 1 -68 -96" stroke="KITred" arrow="normal/normal">
+136 356 m
+212 324 l
+</path>
+<path matrix="1 0 0 1 4 188" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 -244 -88" stroke="KITgreen" arrow="normal/normal">
+496 272 m
+404 316 l
+</path>
+<path matrix="1 0 0 1 0 -36" stroke="KITgreen" arrow="normal/normal">
+192 368 m
+152 272 l
+</path>
+<path matrix="1 0 0 1 0 -36" stroke="black" fill="KITred50">
+64 4 -4 64 188 360 e
+</path>
+<path matrix="1 0 0 1 0 -36" stroke="KITgreen" arrow="normal/normal">
+256 220 m
+212 300 l
+</path>
+<path matrix="1 0 0 1 80 88" stroke="black" fill="KITyellow70">
+36 32 -32 36 176 100 e
+</path>
+<path matrix="1 0 0 1 -68 -96" stroke="KITgreen" arrow="normal/normal">
+148 260 m
+128 348 l
+</path>
+<path matrix="1 0 0 1 12 76" stroke="black" fill="KITgreen50">
+44 -8 8 44 72 92 e
+</path>
+<text matrix="1 0 0 1 -4 392" transformations="translations" pos="0 48" stroke="black" type="minipage" width="252" height="29.1354" depth="16.9295" valign="top" style="center">1. Layout auf oberster\\  Ebene nehmen</text>
+<text layer="gamma" matrix="1 0 0 1 432 -192" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.3527" depth="19.159" valign="top" style="center">3. Berechne Layout eine\\ Stufe niedriger mit Ports</text>
+<path stroke="black" arrow="normal/normal">
+312 156 m
+388 132 l
+</path>
+<path layer="beta" matrix="1 0 0 1 0 -36" stroke="KITred" pen="fat">
+124 224 m
+44.7214 0 0 44.7214 84 204 113.449 237.656 a
+</path>
+<path matrix="1 0 0 1 0 -36" stroke="KITgreen" pen="fat">
+64 244 m
+44.7214 0 0 -44.7214 84 204 76 248 a
+</path>
+<path matrix="1 0 0 1 0 -36" stroke="KITgreen" pen="fat">
+208 232 m
+48.6621 0 0 -48.6621 256 224 213.28 247.302 a
+</path>
+<path matrix="1 0 0 1 0 -36" stroke="KITgreen" pen="fat">
+224 260 m
+48.1664 0 0 -48.1664 256 224 239.539 269.266 a
+</path>
+<path stroke="KITgreen" pen="fat">
+220 268 m
+64.4981 0 0 -64.4981 188 324 203.643 261.428 a
+</path>
+<path stroke="KITgreen" pen="fat">
+176 260 m
+65.1153 0 0 -65.1153 188 324 152.788 269.226 a
+</path>
+<path layer="gamma" matrix="1 0 0 1 276 -204" stroke="black" fill="KITred50">
+64 4 -4 64 188 360 e
+</path>
+<path matrix="1 0 0 1 276 -168" stroke="KITgreen" pen="fat">
+220 268 m
+64.4981 0 0 -64.4981 188 324 203.643 261.428 a
+</path>
+<path matrix="1 0 0 1 276 -168" stroke="KITgreen" pen="fat">
+176 260 m
+65.1153 0 0 -65.1153 188 324 152.788 269.226 a
+</path>
+<path matrix="1 0 0 1 432 56" stroke="black" fill="KITyellow70">
+36 32 -32 36 176 100 e
+</path>
+<path matrix="1 0 0 1 352 -68" stroke="KITgreen" pen="fat">
+208 232 m
+48.6621 0 0 -48.6621 256 224 213.28 247.302 a
+</path>
+<path matrix="1 0 0 1 352 -68" stroke="KITgreen" pen="fat">
+224 260 m
+48.1664 0 0 -48.1664 256 224 239.539 269.266 a
+</path>
+<text matrix="1 0 0 1 456 60" transformations="translations" pos="232 96" stroke="black" type="label" width="18.7278" height="2.3814" depth="0" valign="baseline">...</text>
+<path matrix="1 0 0 1 424 56" stroke="darkgray">
+120 136 m
+120 64 l
+</path>
+<path matrix="1 0 0 1 552 56" stroke="darkgray">
+120 136 m
+120 64 l
+</path>
+<path stroke="KITgreen" arrow="normal/normal">
+592 176 m
+584 196 l
+</path>
+<path stroke="KITgreen" arrow="normal/normal">
+584 168 m
+564 172 l
+</path>
+<path matrix="1 0 0 1 536 96" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 432 56" stroke="KITgreen" arrow="normal/normal">
+192 124 m
+168 112 l
+</path>
+<path matrix="1 0 0 1 432 56" stroke="KITgreen" arrow="normal/normal">
+192 88 m
+168 104 l
+</path>
+<path matrix="1 0 0 1 432 56" stroke="KITgreen" arrow="normal/normal">
+156 80 m
+160 104 l
+</path>
+<path matrix="1 0 0 1 532 56" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 576 68" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 576 108" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path stroke="KITgreen" arrow="normal/normal">
+432 124 m
+436 100 l
+</path>
+<path matrix="1 0 0 1 372 60" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 268 20" stroke="KITgreen" arrow="normal/normal">
+192 124 m
+168 112 l
+</path>
+<path matrix="1 0 0 1 36 -16" stroke="black" fill="KITorange70">
+28 -8 8 28 452 168 e
+</path>
+<path stroke="KITred" arrow="normal/normal">
+436 176 m
+460 164 l
+</path>
+<path stroke="KITred" arrow="normal/normal">
+428 172 m
+428 140 l
+</path>
+<path matrix="1 0 0 1 372 108" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path stroke="KITgreen" arrow="normal/normal">
+488 96 m
+488 124 l
+</path>
+<path layer="delta" stroke="black" rarrow="normal/normal">
+292 248 m
+138.438 0 0 -138.438 401.099 162.78 516 240 a
+</path>
+<text matrix="1 0 0 1 308 104" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.1836" depth="19.012" valign="top" style="center">4. Wiederhole\\ iterativ pro Stufe</text>
+<text layer="beta" matrix="1 0 0 1 60 -148" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.4335" depth="19.257" valign="top" style="center">2. Ports für\\ Gruppen festlegen</text>
 </page>
 <page title="Layout von Gruppen">
 <layer name="alpha"/>
