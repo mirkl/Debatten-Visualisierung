@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20150210132636" title="The Three-Phase Method" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
+<info created="D:20090429144355" modified="D:20150210142857" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -10,10 +10,11 @@
 \hyphenation{formulieren}
 \hyphenation{orthogonale}
 
-\newcommand{\itemcolor}{KITblue}
-\newcommand{\name}{S. Cacean, S. Scheu, C. Voigt,  J. Klawitter, Michael, Mira}
-\newcommand{\prestitle}{Awesome Group}
-\newcommand{\pressubtitle}{Ein kräftebasierter Ansatz für Layouts mit Gruppen}
+\newcommand{\itemcolor}{KITgreen}
+\newcommand{\name}{S. Cacean, J. Klawitter,  S. Scheu, C. Voigt, M. Vollmer, Mira X}
+\newcommand{\prestitle}{Kräftebasierter Ansatz für Layouts mit Gruppen}
+\newcommand{\pressubtitle}{}
+
 \german
 % \dorothea % activate this only for lecture slides
   </preamble>
@@ -317,7 +318,7 @@ h
 h
 </path>
 <text matrix="0.0410872 0 0 0.0410872 627.139 450.083" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
-<text matrix="1 0 0 1 -98 -201.642" pos="106 168" stroke="black" type="minipage" width="497" height="10.7847" depth="0" valign="top" size="verytiny">\name \ -- \prestitle</text>
+<text matrix="1 0 0 1 -98 -201.642" pos="106 168" stroke="black" type="minipage" width="497" height="17.5973" depth="6.118" valign="top" size="verytiny">\name \ -- \prestitle</text>
 <group matrix="1 0 0 1 129 -9.5">
 <group matrix="0.5 0 0 0.5 265.5 -52.5">
 <path matrix="1 0 0 1 -145 -25" fill="KITblue">
@@ -2269,18 +2270,20 @@ h
 <layer name="pagenumbers_dont_count"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="title BACKGROUND alpha" active="alpha"/>
-<text layer="title" matrix="1 0 0 1 -213 -46" pos="213 427" stroke="black" type="label" width="229.271" height="21.5116" depth="6.116" valign="baseline" size="Large">\bf\prestitle</text>
-<text matrix="1 0 0 1 -213 -123" pos="213 427" stroke="black" type="label" width="577.634" height="13.4464" depth="3.938" valign="bottom" size="small">\bf Seminar Algorithmen zur Visualisierung von Debatten $\,\cdot\,$ 17.02.2014</text>
-<text matrix="1 0 0 1 -213 -141" pos="213 427" stroke="black" type="label" width="479.387" height="13.4464" depth="3.938" valign="baseline" size="small">\bf \name</text>
-<group layer="BACKGROUND" matrix="1 0 0 1 2 0">
-<path fill="KITblack50">
+<text layer="title" matrix="1 0 0 1 -213 -82" pos="213 427" stroke="black" type="label" width="655.93" height="21.5842" depth="6.116" valign="baseline" size="Large">\bf\prestitle</text>
+<text matrix="1 0 0 1 -213 -119" pos="213 427" stroke="black" type="label" width="464.345" height="13.4464" depth="3.938" valign="bottom" size="small">\bf Seminar Algorithmen zur Visualisierung von Debatten</text>
+<text matrix="1 0 0 1 -97 -293" pos="213 427" stroke="black" type="label" width="519.202" height="13.4464" depth="3.938" valign="baseline" size="small">\bf \name</text>
+<text layer="BACKGROUND" matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="0" height="0" depth="0" valign="baseline" size="Large">\bf\pressubtitle</text>
+<text layer="pagenumbers_format" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="31.6204" height="7.5578" depth="2.277" halign="center" valign="top" size="verytiny">{\bf [page]}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 0}</text>
+<path layer="alpha" matrix="1 0 0 1 -2 4" fill="KITblack50">
 -28 212 m
 760 212 l
 760 250 l
 -28 250 l
 h
 </path>
-<path fill="KITblack15">
+<path matrix="1 0 0 1 2 0" fill="KITblack15">
 -13 -22 m
 12 0 0 -12 -13 -10 -25 -10 a
 -25 522 l
@@ -2294,18 +2297,14 @@ h
 -34 531 l
 h
 </path>
-<text matrix="0.0614019 0 0 0.0614019 -14.7365 426.158" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
-<text matrix="1 0 0 1 -98 -201.642" pos="98 168" stroke="black" type="minipage" width="412" height="17.5973" depth="6.118" valign="top" size="verytiny">\helmholz</text>
-<text matrix="1 0 0 1 -22 -1" pos="24 232" stroke="white" type="label" width="409.088" height="9.7188" depth="0.168" valign="center" size="tiny">\algoinst</text>
-<text matrix="1 0 0 1 149 -29.5" transformations="translations" pos="608 -16" stroke="white" type="label" width="105.167" height="13.244" depth="0.176" halign="right" valign="center" size="small">\bf www.kit.edu</text>
-</group>
-<text matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="704.361" height="21.5842" depth="6.116" valign="baseline" size="Large">\bf\pressubtitle</text>
-<text layer="pagenumbers_format" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="31.6204" height="7.5578" depth="2.277" halign="center" valign="top" size="verytiny">{\bf [page]}</text>
-<text layer="alpha" matrix="1 0 0 1 -224 288" transformations="translations" pos="224 128" stroke="red" type="label" width="879.276" height="25.4584" depth="7.26" valign="baseline" size="LARGE">Todo: Passenden Titel finden Edit - Document Properties</text>
-<text matrix="1 0 0 1 -224 128" transformations="translations" pos="224 128" stroke="red" type="label" width="1637.92" height="25.6894" depth="7.744" valign="baseline" size="LARGE">Todo: Namen vervollständigen (Edit -&gt; Document Properties)
-\newline
+<text matrix="0.0614019 0 0 0.0614019 -12.7365 426.158" pos="240 144" stroke="black" type="label" width="2318.8" height="0" depth="0" valign="baseline">\kitlogo</text>
+<text matrix="1 0 0 1 -96 -201.642" pos="98 168" stroke="black" type="minipage" width="412" height="17.5973" depth="6.118" valign="top" size="verytiny">\helmholz</text>
+<text matrix="1 0 0 1 151 -29.5" transformations="translations" pos="608 -16" stroke="white" type="label" width="105.167" height="13.244" depth="0.176" halign="right" valign="center" size="small">\bf www.kit.edu</text>
+<text matrix="1 0 0 1 8 8" transformations="translations" pos="0 240" stroke="white" type="minipage" width="688" height="20.3196" depth="6.356" valign="top" size="tiny">\textsc{Institut für theoretische Informatik $\cdot$  Diplom Inform. Andreas Gemsa, Dr. Ignaz Rutter}\\
+\textsc{Institut für Philosophie $\cdot$  Jun.-Prof. Dr. habil. Gregor Betz}</text>
+<text matrix="1 0 0 1 -108 -12" transformations="translations" pos="124 104" stroke="darkred" type="minipage" width="468" height="43.7497" depth="31.605" valign="top">Todo: Titel finden, Namen vervollständigen (Edit $\rightarrow$ Document Properties)
 am besten nach Nachname/Vorname sortiert</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 0}</text>
+<text matrix="1 0 0 1 51 -317" pos="213 427" stroke="black" type="label" width="153.512" height="13.0086" depth="3.806" valign="baseline" size="small">\bf \today</text>
 </page>
 <page title="Beispielseite">
 <layer name="alpha"/>
@@ -3219,14 +3218,14 @@ h
 308 296 m
 388 308 l
 </path>
-<path layer="delta" matrix="1 0 0 1 144 20" stroke="black" fill="KITcyanblue">
+<path layer="alpha" matrix="1 0 0 1 144 20" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 188 152" stroke="black" fill="KITcyanblue">
+<path layer="beta" matrix="1 0 0 1 188 152" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
@@ -3445,11 +3444,21 @@ h
 </page>
 <page title="Layout von Gruppen">
 <layer name="alpha"/>
+<layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="19.0341" depth="6.811" valign="top" style="item">Ziel: Layout einer Gruppe innerhalb Kreises mit festen Ports</text>
+<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="18.9606" depth="6.762" valign="top" style="item">Lösungsansatz:
+</text>
 </page>
 <page title="Layoutanpassung bei Interaktion">
 <layer name="alpha"/>
+<layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="35.6181" depth="23.471" valign="top" style="item">Ziel: Anpassung des Layouts beim Öffnen oder Schließen einer Gruppe</text>
+<text layer="beta" matrix="0.999911 0.0133285 -0.0133285 0.999911 5.40014 -76.8689" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="18.9606" depth="6.762" valign="top" style="item">Lösungsansatz:
+</text>
 </page>
 <page title="Alternative Lösungsansätze">
 <layer name="alpha"/>
