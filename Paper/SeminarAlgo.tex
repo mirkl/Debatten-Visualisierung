@@ -120,6 +120,13 @@ $i = 1$\;
 % Äquivalent: Layout eines Graphens mit punktförmigen Knoten auf Kreis und gelabelten Knoten innerhalb des Kreises
 \todo[inline]{Problemreduktion beschreiben, Lösungsvorschlag}
 
+% Genau zu spezifizieren:
+% - wie wird es modelliert: Ports als feste Knoten? nur Reihenfolge festlegen und flexibel auf gewissem Radius? ..
+% - Größe des Kreises
+% - Anziehung zu Mittelpunkt?
+% - Anfangslayout: zum Beispiel Knoten mit aus Gruppe ausgehende eingehende Kanten direkt neben Ports positionieren?
+
+
 \section{Layout-Anpassung beim Öffnen oder Schließen einer Gruppe}
 % Removing node intersections when changing the size of a node while keeping the mental map
 % Problemabstraktion: Auflösen von Knotenlabelüberschneidung nach Größenveränderung eines Knotenlabes unter Beibehaltung der mentalen Karte
@@ -132,6 +139,12 @@ $i = 1$\;
 	% geöffnete Gruppe stoßt alle Elemente ab, sodass sie genug Platz hat.  Rest auch kräftebasiert um Ähnlichkeit zu Layout davor zu bewahren
 	% geschlossene Gruppe stoßt nun Elemente weniger ab. Rest wieder kräftebasiert um Ähnlichkeit zu Layout davor zu bewahren
 % - Ist geänderte Gruppe nicht auf oberster Ebene, so wiederholt sich der Prozess iterativ nach oben, da übergeordnete Gruppen auch mehr Platz brauen oder freigeben
+
+% Genau zu spezifizieren:
+% - Wann werden Anker gesetzt, wie lange bestehen sie
+% - Wie stark sind die Anker im Verhältnis zu anderen Kräften
+% - Verhältnis Gruppengrößen und Kräfte für Abstoßungen/Anziehungen
+% - Verhalten von Ports bei Layoutänderung
 
 % - Erweiterungsmöglichkeit: Anker von jedem Schritt speichern, jedoch pro Schritt abschwächen
 
