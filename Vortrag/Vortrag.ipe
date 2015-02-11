@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20150210142857" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
+<info created="D:20090429144355" modified="D:20150211225432" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -2312,7 +2312,7 @@ am besten nach Nachname/Vorname sortiert</text>
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha" active="alpha"/>
 <text layer="alpha" pin="h" pos="0 440" stroke="black" type="minipage" width="736" height="38.073" depth="25.921" valign="top">\begin{itemize}
 \item Stichpunkt 1
 \item Stichpunkt 2
@@ -2467,7 +2467,7 @@ h
 <layer name="epsilon"/>
 <layer name="zeta"/>
 <layer name="eta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha" active="alpha"/>
 <path layer="alpha" matrix="1 0 0 1 0 32" stroke="black" fill="gold">
 64 384 m
 64 320 l
@@ -2907,7 +2907,7 @@ h
 <page title="Edit page title [strg] + [p]">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha" active="alpha"/>
 <text layer="alpha" transformations="translations" pos="32 416" stroke="black" type="label" width="317.16" height="16.2215" depth="4.998" valign="baseline">Dann [strg]+[L] zum kompilieren</text>
 <text transformations="translations" pos="80 320" stroke="black" type="minipage" width="464" height="31.4335" depth="19.257" valign="top">Drücke [s] für Auswahlmaus, klick mich an und öffne Edit Window mit [strg] + [e]</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 3}</text>
@@ -2918,10 +2918,10 @@ h
 <layer name="gamma"/>
 <layer name="delta"/>
 <layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha beta pagenumbers_page" active="beta"/>
-<view layers="alpha gamma pagenumbers_page" active="gamma"/>
-<view layers="alpha delta pagenumbers_page" active="delta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha gamma" active="gamma"/>
+<view layers="alpha" active="delta"/>
 <group layer="beta">
 <path stroke="black" fill="KITblue15">
 0 104 m
@@ -2992,9 +2992,35 @@ decorator ipelet.  You can even define your own box types.
 <page title="Problemszenario">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -32 -16" transformations="translations" pos="48 400" stroke="black" type="label" width="288.282" height="16.5473" depth="4.998" valign="baseline">Argument Karte mit Gruppen</text>
+<text layer="alpha" matrix="1 0 0 1 -32 -16" transformations="translations" pos="48 400" stroke="black" type="label" width="369.213" height="16.2215" depth="4.998" valign="baseline">Motivation und Problembeschreibung</text>
 </page>
-<page title="Algorithmus">
+<page title="Problemabstraktion">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="16 400" stroke="black" type="minipage" width="704" height="15.9568" depth="3.7485" valign="top">Keine Kantenfarbe, keine Inhalte in Boxen, ..</text>
+</page>
+<page title="Konzept unseres Layoutalgorithmus">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="133.907" depth="121.961" valign="top">Gruppen in Kugeln\\
+Kräftebasiertes Layout pro Stufe\\
+Layouts haben bis auf am Anfang festgelegte Ports, keinen Einfluss auf anere Stufen\\
+
+bottom-up: benötigten Platz berechnen\\
+top-down: Layout berechnen\\
+
+Verhalten:
+Anker und neue Größenberechnung, ..</text>
+</page>
+<page title="Weitere Ansätze">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="75.3056" depth="63.21" valign="top">Alles Kräfte, starke Anziehung innerhalb von Gruppen, keine Abschirmung\\
+
+Pro Gruppe nur 2 Ports, oben und unten\\
+Stufenlayout</text>
+</page>
+<page title="Vergleich der Ansätze">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 </page>
@@ -3460,7 +3486,7 @@ h
 <text layer="beta" matrix="0.999911 0.0133285 -0.0133285 0.999911 5.40014 -76.8689" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="18.9606" depth="6.762" valign="top" style="item">Lösungsansatz:
 </text>
 </page>
-<page title="Alternative Lösungsansätze">
+<page title="Zusammenfassung">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 </page>
