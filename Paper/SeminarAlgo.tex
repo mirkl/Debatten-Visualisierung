@@ -114,17 +114,68 @@ $i = 1$\;
 \caption{Layoutalgorithmus}
 \end{algorithm}
 
+% DEFINITION Anker
+% Pseudoknoten, wird nicht gerendert
+% hat Kanten zu allen Knoten, welche er Ankert
+% optimale Kantenlänge = 0
+% Federkraft Fallabhängig und jeweils zu spezifizieren
 
-\subsection{Layout in Gruppen in abhängigkeit von Ports}
+\subsection{Layout in Gruppen in Abhängigkeit von Ports}
 % Problem: Layout eines Graphens (mit Labelknoten) innerhalb eines Kreises mit Ports für ausgehende kanten
 % Äquivalent: Layout eines Graphens mit punktförmigen Knoten auf Kreis und gelabelten Knoten innerhalb des Kreises
 \todo[inline]{Problemreduktion beschreiben, Lösungsvorschlag}
 
+% Bemerkung: Layout in einer Gruppe ist von Layouts in anderen Stufen und Gruppen unabhängig (außer durch Ports)
+
 % Genau zu spezifizieren:
 % - wie wird es modelliert: Ports als feste Knoten? nur Reihenfolge festlegen und flexibel auf gewissem Radius? ..
-% - Größe des Kreises
-% - Anziehung zu Mittelpunkt?
-% - Anfangslayout: zum Beispiel Knoten mit aus Gruppe ausgehende eingehende Kanten direkt neben Ports positionieren?
+	% Ports bleiben fest. Argument: Sowieso Winkel an Ports, nich wesentliche Winkel-Änderung erwartet bei Veränderung
+
+% - Anziehung zu Mittelpunkt
+	% ja, mit Kanter
+	% schwache Feder mit Faktor $\alpha$
+
+% - Anfangslayout: 
+	% a) Knoten mit aus Gruppe ausgehende eingehende Kanten direkt neben Ports positionieren, dann breitensuche oder so weiter
+	% b) random
+	% c) Layout von Größenberechnung spiegeln (nicht, vertikal, horizontal, beides) und Längen der Port-Knoten-Kanten summieren
+
+% - Größe des Kreises definiert durch Radius R
+	% Gegeben: Berechnete Größe R' in bottom-up Verfahren
+	% Problem: berechnete Größe ohne Ports, kann zu klein sein, da Platz für Kanten zu Ports geschaffen werden muss (darf nicht durch Knoten)
+	% Ziel: finde Faktor $\beta$ sodass $R = \beta * R'$ groß genug            ( es gillt immer $R \geq R'$)
+	
+	% Variante induvidualisiertes $\beta$ für jede Gruppe - anfangs 1. Startlayout  und später 2. für jeden Zustand 
+	  %________________________________________________________________________________________________________________%
+	 	% Algorithmus zum finden von $\beta$
+			% Idee: berechne Layout, teste ob Radius verkleinert werden kann, erhöhe bei bedarf Anziehung zu Mitte ($\alpha$)
+			% Abbruchbedingungen: - Änderung in Größe nach erhöhen von Anziehung zu Mitte zu klein
+			%			         - Anziehung zu Mitte wurde schon stark erhöht und man ist schon nahe an R' 
+								% $\epsilon = f(\alpha)$, wenn $R \leq epsilon * R' $   Abbruch
+	  %
+		%   0. $\epsilon = 1$   (Abbruchvariable)
+		%   1. Setze $R = \beta' * R'$ mit $\beta'$ groß genug,  
+		%   2. Wenn $\beta' < \epsilon$ gehe zu 8.
+		%   3. Berechne Layout mit Anfangslayout in erster Runde oder Layout von letzter Runde (und natürlich Kanten zu Ports)
+		%   4. Wenn $R$ verkleinert werden kann wähle neues $\beta'$ und gehe zu 1.
+		%   5. Erhöhe Mittelankerfederstärke $alpha$, erhöhe $\epsilon$
+		%   6. Berechne Layout
+		%   7. Wenn mögliche Änderung  $ > x\%$, wähle neues $\beta'$ und gehe zu 1.
+		%   8. $\beta = \beta'$
+	 %_________________________________________________________________________________________________________________%		
+
+
+	% Variante festes $\beta$ und mittels Berechnung von erwarteten Größen
+	%_________________________________________________________________________________________________________________%
+		% Idee: Berechne ausreichende Größe anhand von Größen der Kinder
+		
+		% Für Kindruppe $G_i$ ist $x_i = ((Radius in Zustand von G_i) - (max Radius von G_i) ) \cdot \xi$, wobei $0 < \xi < 1$
+		% $R = R' + x_i  + \delta$
+	%_________________________________________________________________________________________________________________%
+							
+
+	% Anmerkung: Da in Praxis (Argumentkarten) die Gruppentiefe nicht hoch ist und in Gruppe nicht viele Gruppen sind, 
+			% können hier auch die Größen für alle Fälle berechnet werden
 
 
 \section{Layout-Anpassung beim Öffnen oder Schließen einer Gruppe}
@@ -142,11 +193,16 @@ $i = 1$\;
 
 % Genau zu spezifizieren:
 % - Wann werden Anker gesetzt, wie lange bestehen sie
-% - Wie stark sind die Anker im Verhältnis zu anderen Kräften
+	% Grundanker, Stärke muss man testen, evtl so stark wie eine Kante $\cdot \gamma$ mit $\gamma \in [1, irgendwas]$
+	% Abhängig von Kräftealgorithmus, wenn dort Masse von Gruppen nicht mit einbezogen wird, dann für größere Gruppen, stärkere Anker
+	% ((( Erweiterungsmöglichkeit: Anker von jedem Schritt speichern, jedoch pro Schritt abschwächen)))
 % - Verhältnis Gruppengrößen und Kräfte für Abstoßungen/Anziehungen
+	% Variante zu entscheiden: a) Größe proportional, dann linear/logarithmisch
+	%				  b) Abstoßung proportional, dann logarithmisch
 % - Verhalten von Ports bei Layoutänderung
+	% bleiben fest. keine großen Änderungen zu erwarten.
 
-% - Erweiterungsmöglichkeit: Anker von jedem Schritt speichern, jedoch pro Schritt abschwächen
+
 
 \section{Evaluation und Vergleich zu anderen Lösungsansätzen}
 \subsection{Hierarchisches Layout}
