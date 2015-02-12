@@ -1,3 +1,5 @@
 Das Programm Ipe7 gibts auf Sourceforge unter http://ipe7.sourceforge.net
 
 Die für diesen Vortrag benötigten Ipelets findet ihr im Ordner Ipelets zur installation siehe: http://www.inf.fu-berlin.de/inst/ag-ti/people/rote/Software/ipelets.html
+
+Anleitung des Institues gibts unter http://i11www.iti.uni-karlsruhe.de/information/scripts#ipe
