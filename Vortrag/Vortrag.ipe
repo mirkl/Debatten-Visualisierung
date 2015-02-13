@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20150211225432" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
+<info created="D:20090429144355" modified="D:20150213170742" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -3029,10 +3029,29 @@ Stufenlayout</text>
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha epsilon" active="epsilon"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
+<path layer="epsilon" stroke="KITred">
+184 108 m
+160 120 l
+</path>
+<path stroke="KITred">
+184 108 m
+156 80 l
+</path>
+<path stroke="KITred">
+184 108 m
+200 92 l
+</path>
+<path stroke="KITred">
+184 108 m
+200 132 l
+</path>
+<use matrix="1 0 0 1 8 4" name="mark/disk(sx)" pos="176 104" size="normal" stroke="KITred"/>
 <path layer="gamma" matrix="1 0 0 1 480 240" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
@@ -3040,7 +3059,7 @@ Stufenlayout</text>
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 316 -12" stroke="KITred" arrow="normal/normal">
+<path matrix="1 0 0 1 316 -12" stroke="KITblack70" arrow="normal/normal">
 152 260 m
 212 316 l
 </path>
@@ -3059,11 +3078,11 @@ h
 h
 </path>
 <text layer="beta" matrix="1 0 0 1 28 84" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.3527" depth="19.159" valign="top" style="center">2. Berechne\\ benötigte Fläche</text>
-<path layer="alpha" matrix="1 0 0 1 0 8" stroke="KITgreen" arrow="normal/normal">
+<path layer="alpha" matrix="1 0 0 1 0 8" stroke="KITblack70" arrow="normal/normal">
 96 96 m
 72 112 l
 </path>
-<path matrix="1 0 0 1 0 8" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 0 8" stroke="KITblack70" arrow="normal/normal">
 192 88 m
 168 104 l
 </path>
@@ -3074,7 +3093,7 @@ h
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 0 8" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 0 8" stroke="KITblack70" arrow="normal/normal">
 192 124 m
 168 112 l
 </path>
@@ -3092,11 +3111,11 @@ h
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 0 8" stroke="KITred" arrow="normal/normal">
+<path matrix="1 0 0 1 0 8" stroke="KITblack70" arrow="normal/normal">
 64 72 m
 88 88 l
 </path>
-<path matrix="1 0 0 1 0 8" stroke="KITred" arrow="normal/normal">
+<path matrix="1 0 0 1 0 8" stroke="KITblack70" arrow="normal/normal">
 56 80 m
 60 104 l
 </path>
@@ -3107,12 +3126,12 @@ h
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 0 8" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 0 8" stroke="KITblack70" arrow="normal/normal">
 156 80 m
 160 104 l
 </path>
 <text matrix="1 0 0 1 8 8" transformations="translations" pos="232 96" stroke="black" type="label" width="18.7278" height="2.3814" depth="0" valign="baseline">...</text>
-<path layer="gamma" matrix="1 0 0 1 316 -12" stroke="KITred" arrow="normal/normal">
+<path layer="gamma" matrix="1 0 0 1 316 -12" stroke="KITblack70" arrow="normal/normal">
 136 356 m
 212 324 l
 </path>
@@ -3123,25 +3142,25 @@ h
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 140 -4" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 140 -4" stroke="KITblack70" arrow="normal/normal">
 496 272 m
 404 316 l
 </path>
-<path matrix="1 0 0 1 140 -4" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 140 -4" stroke="KITblack70" arrow="normal/normal">
 432 396 m
 396 324 l
 </path>
 <path matrix="1 0 0 1 500 300" stroke="black" fill="KITred50">
 44 -8 8 44 72 92 e
 </path>
-<path matrix="1 0 0 1 140 -4" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 140 -4" stroke="KITblack70" arrow="normal/normal">
 500 272 m
 452 356 l
 </path>
 <path matrix="1 0 0 1 464 172" stroke="black" fill="KITyellow70">
 36 32 -32 36 176 100 e
 </path>
-<path matrix="1 0 0 1 316 -12" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 316 -12" stroke="KITblack70" arrow="normal/normal">
 148 260 m
 128 348 l
 </path>
@@ -3154,79 +3173,79 @@ h
 153.192 0 0 -153.192 390.967 276.513 272 180 a
 </path>
 <text matrix="1 0 0 1 424 -144" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.1836" depth="19.012" valign="top" style="center">4. Wiederhole \\iterativ pro Stufe</text>
-<path layer="beta" matrix="1 0 0 1 44 140" stroke="black" fill="KITyellow70">
+<path layer="beta" matrix="1 0 0 1 48 140" stroke="black" fill="KITyellow70">
 36 32 -32 36 176 100 e
 </path>
-<path matrix="1 0 0 1 44 140" stroke="black" fill="KITgreen50">
+<path matrix="1 0 0 1 28 148" stroke="black" fill="KITgreen50">
 44 -8 8 44 72 92 e
 </path>
-<path matrix="1 0 0 1 52 180" stroke="black" fill="KITcyanblue">
+<path matrix="1 0 0 1 36 188" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 148 180" stroke="black" fill="KITcyanblue">
+<path matrix="1 0 0 1 152 180" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 44 140" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 28 148" stroke="KITblack70" arrow="normal/normal">
 96 96 m
 72 112 l
 </path>
-<path matrix="1 0 0 1 44 140" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 48 140" stroke="KITblack70" arrow="normal/normal">
 192 88 m
 168 104 l
 </path>
-<path matrix="1 0 0 1 144 140" stroke="black" fill="KITcyanblue">
+<path matrix="1 0 0 1 148 140" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 44 140" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 48 140" stroke="KITblack70" arrow="normal/normal">
 192 124 m
 168 112 l
 </path>
-<path matrix="1 0 0 1 188 192" stroke="black" fill="KITcyanblue">
+<path matrix="1 0 0 1 192 192" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 84 156" stroke="black" fill="KITcyanblue">
+<path matrix="1 0 0 1 68 164" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 44 140" stroke="KITred" arrow="normal/normal">
+<path matrix="1 0 0 1 28 148" stroke="KITblack70" arrow="normal/normal">
 64 72 m
 88 88 l
 </path>
-<path matrix="1 0 0 1 44 140" stroke="KITred" arrow="normal/normal">
+<path matrix="1 0 0 1 28 148" stroke="KITblack70" arrow="normal/normal">
 56 80 m
 60 104 l
 </path>
-<path matrix="1 0 0 1 44 140" stroke="black" fill="KITcyanblue">
+<path matrix="1 0 0 1 28 148" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 44 140" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 48 140" stroke="KITblack70" arrow="normal/normal">
 156 80 m
 160 104 l
 </path>
-<text matrix="1 0 0 1 44 140" transformations="translations" pos="232 96" stroke="black" type="label" width="18.7278" height="2.3814" depth="0" valign="baseline">...</text>
+<text matrix="1 0 0 1 64 140" transformations="translations" pos="232 96" stroke="black" type="label" width="18.7278" height="2.3814" depth="0" valign="baseline">...</text>
 <text layer="alpha" matrix="1 0 0 1 36 8" transformations="translations" pos="0 48" stroke="black" type="minipage" width="252" height="29.1354" depth="16.9295" valign="top" style="center">1. Berechne Layout auf\\ unterster Ebene</text>
 <path matrix="1 0 0 1 4 4" stroke="darkgray">
 120 136 m
@@ -3251,12 +3270,20 @@ h
 64 80 l
 h
 </path>
-<path layer="beta" matrix="1 0 0 1 188 152" stroke="black" fill="KITcyanblue">
+<path layer="beta" matrix="1 0 0 1 192 152" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
 64 64 l
 64 80 l
 h
+</path>
+<path layer="delta" matrix="1 0 0 1 40 140" stroke="darkgray">
+120 136 m
+120 64 l
+</path>
+<path matrix="1 0 0 1 168 140" stroke="darkgray">
+120 136 m
+120 64 l
 </path>
 </page>
 <page title="Algorithmus Teil 2 &quot;top-down&quot;">
@@ -3275,11 +3302,11 @@ h
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 -68 -96" stroke="KITred" arrow="normal/normal">
+<path matrix="1 0 0 1 -68 -96" stroke="KITblack70" arrow="normal/normal">
 152 260 m
 212 316 l
 </path>
-<path matrix="1 0 0 1 -68 -96" stroke="KITred" arrow="normal/normal">
+<path matrix="1 0 0 1 -68 -96" stroke="KITblack70" arrow="normal/normal">
 136 356 m
 212 324 l
 </path>
@@ -3290,25 +3317,25 @@ h
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 -244 -88" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 -244 -88" stroke="KITblack70" arrow="normal/normal">
 496 272 m
 404 316 l
 </path>
-<path matrix="1 0 0 1 0 -36" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 0 -36" stroke="KITblack70" arrow="normal/normal">
 192 368 m
 152 272 l
 </path>
 <path matrix="1 0 0 1 0 -36" stroke="black" fill="KITred50">
 64 4 -4 64 188 360 e
 </path>
-<path matrix="1 0 0 1 0 -36" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 0 -36" stroke="KITblack70" arrow="normal/normal">
 256 220 m
 212 300 l
 </path>
 <path matrix="1 0 0 1 80 88" stroke="black" fill="KITyellow70">
 36 32 -32 36 176 100 e
 </path>
-<path matrix="1 0 0 1 -68 -96" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 -68 -96" stroke="KITblack70" arrow="normal/normal">
 148 260 m
 128 348 l
 </path>
@@ -3325,45 +3352,45 @@ h
 124 224 m
 44.7214 0 0 44.7214 84 204 113.449 237.656 a
 </path>
-<path matrix="1 0 0 1 0 -36" stroke="KITgreen" pen="fat">
+<path matrix="1 0 0 1 0 -36" stroke="KITred" pen="fat">
 64 244 m
 44.7214 0 0 -44.7214 84 204 76 248 a
 </path>
-<path matrix="1 0 0 1 0 -36" stroke="KITgreen" pen="fat">
+<path matrix="1 0 0 1 0 -36" stroke="KITred" pen="fat">
 208 232 m
 48.6621 0 0 -48.6621 256 224 213.28 247.302 a
 </path>
-<path matrix="1 0 0 1 0 -36" stroke="KITgreen" pen="fat">
+<path matrix="1 0 0 1 0 -36" stroke="KITred" pen="fat">
 224 260 m
 48.1664 0 0 -48.1664 256 224 239.539 269.266 a
 </path>
-<path stroke="KITgreen" pen="fat">
+<path stroke="KITred" pen="fat">
 220 268 m
 64.4981 0 0 -64.4981 188 324 203.643 261.428 a
 </path>
-<path stroke="KITgreen" pen="fat">
+<path stroke="KITred" pen="fat">
 176 260 m
 65.1153 0 0 -65.1153 188 324 152.788 269.226 a
 </path>
 <path layer="gamma" matrix="1 0 0 1 276 -204" stroke="black" fill="KITred50">
 64 4 -4 64 188 360 e
 </path>
-<path matrix="1 0 0 1 276 -168" stroke="KITgreen" pen="fat">
+<path matrix="1 0 0 1 276 -168" stroke="KITred" pen="fat">
 220 268 m
 64.4981 0 0 -64.4981 188 324 203.643 261.428 a
 </path>
-<path matrix="1 0 0 1 276 -168" stroke="KITgreen" pen="fat">
+<path matrix="1 0 0 1 276 -168" stroke="KITred" pen="fat">
 176 260 m
 65.1153 0 0 -65.1153 188 324 152.788 269.226 a
 </path>
 <path matrix="1 0 0 1 432 56" stroke="black" fill="KITyellow70">
 36 32 -32 36 176 100 e
 </path>
-<path matrix="1 0 0 1 352 -68" stroke="KITgreen" pen="fat">
+<path matrix="1 0 0 1 352 -68" stroke="KITred" pen="fat">
 208 232 m
 48.6621 0 0 -48.6621 256 224 213.28 247.302 a
 </path>
-<path matrix="1 0 0 1 352 -68" stroke="KITgreen" pen="fat">
+<path matrix="1 0 0 1 352 -68" stroke="KITred" pen="fat">
 224 260 m
 48.1664 0 0 -48.1664 256 224 239.539 269.266 a
 </path>
@@ -3376,11 +3403,11 @@ h
 120 136 m
 120 64 l
 </path>
-<path stroke="KITgreen" arrow="normal/normal">
+<path stroke="KITblack70" arrow="normal/normal">
 592 176 m
 584 196 l
 </path>
-<path stroke="KITgreen" arrow="normal/normal">
+<path stroke="KITblack70" arrow="normal/normal">
 584 168 m
 564 172 l
 </path>
@@ -3391,15 +3418,15 @@ h
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 432 56" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 432 56" stroke="KITblack70" arrow="normal/normal">
 192 124 m
 168 112 l
 </path>
-<path matrix="1 0 0 1 432 56" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 432 56" stroke="KITblack70" arrow="normal/normal">
 192 88 m
 168 104 l
 </path>
-<path matrix="1 0 0 1 432 56" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 432 56" stroke="KITblack70" arrow="normal/normal">
 156 80 m
 160 104 l
 </path>
@@ -3424,7 +3451,7 @@ h
 64 80 l
 h
 </path>
-<path stroke="KITgreen" arrow="normal/normal">
+<path stroke="KITblack70" arrow="normal/normal">
 432 124 m
 436 100 l
 </path>
@@ -3435,18 +3462,18 @@ h
 64 80 l
 h
 </path>
-<path matrix="1 0 0 1 268 20" stroke="KITgreen" arrow="normal/normal">
+<path matrix="1 0 0 1 268 20" stroke="KITblack70" arrow="normal/normal">
 192 124 m
 168 112 l
 </path>
 <path matrix="1 0 0 1 36 -16" stroke="black" fill="KITorange70">
 28 -8 8 28 452 168 e
 </path>
-<path stroke="KITred" arrow="normal/normal">
+<path stroke="KITblack70" arrow="normal/normal">
 436 176 m
 460 164 l
 </path>
-<path stroke="KITred" arrow="normal/normal">
+<path stroke="KITblack70" arrow="normal/normal">
 428 172 m
 428 140 l
 </path>
@@ -3457,7 +3484,7 @@ h
 64 80 l
 h
 </path>
-<path stroke="KITgreen" arrow="normal/normal">
+<path stroke="KITblack70" arrow="normal/normal">
 488 96 m
 488 124 l
 </path>
