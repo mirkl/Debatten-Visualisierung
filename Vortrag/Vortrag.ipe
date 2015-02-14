@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20150213170742" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
+<info created="D:20090429144355" modified="D:20150214152254" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -3498,10 +3498,298 @@ h
 <page title="Layout von Gruppen">
 <layer name="alpha"/>
 <layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
+<view layers="alpha gamma" active="gamma"/>
+<view layers="alpha gamma delta" active="delta"/>
+<view layers="alpha epsilon" active="epsilon"/>
+<view layers="alpha zeta" active="zeta"/>
 <text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="19.0341" depth="6.811" valign="top" style="item">Ziel: Layout einer Gruppe innerhalb Kreises mit festen Ports</text>
-<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="18.9606" depth="6.762" valign="top" style="item">Lösungsansatz:
+<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="70.7095" depth="58.604" valign="top" style="item">Lösungsansatz:
+\begin{itemize}
+\item Ports an fester Position, simuliert durch Knoten
+\item Anker zur Mitte, Stärke $\alpha$
+\item Wahl des Anfangslayout
+\end{itemize}
+</text>
+<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="52.969" depth="40.866" valign="top" style="item">Lösungsansatz:
+\begin{itemize}
+\item Ports an fester Position, simuliert durch Knoten
+\item Anker zur Mitte, Stärke $\alpha$
+\end{itemize}
+</text>
+<path layer="delta" matrix="1 0 0 1 240 -128" stroke="black" fill="KITred50">
+64 4 -4 64 188 360 e
+</path>
+<path matrix="1 0 0 1 240 -92" stroke="KITred" pen="fat">
+220 268 m
+64.4981 0 0 -64.4981 188 324 203.643 261.428 a
+</path>
+<path matrix="1 0 0 1 240 -92" stroke="KITred" pen="fat">
+176 260 m
+65.1153 0 0 -65.1153 188 324 152.788 269.226 a
+</path>
+<path matrix="1 0 0 1 240 -288" stroke="black" fill="KITred50">
+64 4 -4 64 188 360 e
+</path>
+<path matrix="1 0 0 1 240 -252" stroke="KITred" pen="fat">
+220 268 m
+64.4981 0 0 -64.4981 188 324 203.643 261.428 a
+</path>
+<path matrix="1 0 0 1 240 -252" stroke="KITred" pen="fat">
+176 260 m
+65.1153 0 0 -65.1153 188 324 152.788 269.226 a
+</path>
+<path matrix="1 0 0 1 404 -128" stroke="black" fill="KITred50">
+64 4 -4 64 188 360 e
+</path>
+<path matrix="1 0 0 1 404 -92" stroke="KITred" pen="fat">
+220 268 m
+64.4981 0 0 -64.4981 188 324 203.643 261.428 a
+</path>
+<path matrix="1 0 0 1 404 -92" stroke="KITred" pen="fat">
+176 260 m
+65.1153 0 0 -65.1153 188 324 152.788 269.226 a
+</path>
+<path matrix="1 0 0 1 336 188" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 -36 80" stroke="KITblack70" rarrow="normal/normal">
+428 172 m
+428 140 l
+</path>
+<path matrix="1 0 0 1 212 48" stroke="KITblack70" rarrow="normal/normal">
+188 208 m
+220 192 l
+</path>
+<path matrix="1 0 0 1 0 64" stroke="black" fill="KITorange70">
+28 -8 8 28 452 168 e
+</path>
+<path matrix="1 0 0 1 232 100" stroke="KITblack70" rarrow="normal/normal">
+192 124 m
+168 112 l
+</path>
+<path matrix="1 0 0 1 336 140" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 0 -8" stroke="KITred" arrow="normal/normal">
+392 276 m
+404 180 l
+</path>
+<path matrix="1 0 0 1 0 -8" stroke="KITred" arrow="normal/normal">
+556 212 m
+568 180 l
+</path>
+<path matrix="1 0 0 1 500 140" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 396 100" stroke="KITblack70" arrow="normal/normal">
+192 124 m
+168 112 l
+</path>
+<path matrix="1 0 0 1 128 80" stroke="KITblack70" arrow="normal/normal">
+428 172 m
+428 140 l
+</path>
+<path matrix="1 0 0 1 164 64" stroke="black" fill="KITorange70">
+28 -8 8 28 452 168 e
+</path>
+<path matrix="1 0 0 1 0 -4" stroke="KITblack70" arrow="normal/normal">
+564 260 m
+588 248 l
+</path>
+<path matrix="1 0 0 1 500 188" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 0 -8" stroke="KITred" rarrow="normal/normal">
+452 210 m
+452 180 l
+</path>
+<path matrix="1 0 0 1 164 -8" stroke="KITred" rarrow="normal/normal">
+452 210 m
+452 180 l
+</path>
+<path matrix="1 0 0 1 0 -8" stroke="KITred" arrow="normal/normal">
+452 20 m
+422 54 l
+</path>
+<path matrix="1 0 0 1 0 -8" stroke="KITred" rarrow="normal/normal">
+404 20 m
+460 98 l
+</path>
+<path matrix="1 0 0 1 408 26" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 404 -288" stroke="black" fill="KITred50">
+64 4 -4 64 188 360 e
+</path>
+<path matrix="1 0 0 1 404 -252" stroke="KITred" pen="fat">
+220 268 m
+64.4981 0 0 -64.4981 188 324 203.643 261.428 a
+</path>
+<path matrix="1 0 0 1 404 -252" stroke="KITred" pen="fat">
+176 260 m
+65.1153 0 0 -65.1153 188 324 152.788 269.226 a
+</path>
+<path matrix="1 0 0 1 0 -8" stroke="KITred" rarrow="normal/normal">
+568 20 m
+624 50 l
+</path>
+<path matrix="1 0 0 1 572 -22" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 200 -82" stroke="KITblack70" arrow="normal/normal">
+428 172 m
+428 140 l
+</path>
+<path matrix="1 0 0 1 148 -262" stroke="KITblack70" arrow="normal/normal">
+450 324 m
+472 310 l
+</path>
+<path matrix="1 0 0 1 118 -98" stroke="black" fill="KITorange70">
+28 -8 8 28 452 168 e
+</path>
+<path matrix="1 0 0 1 164 -8" stroke="KITblack70" arrow="normal/normal">
+456 102 m
+432 90 l
+</path>
+<path matrix="1 0 0 1 572 26" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 164 -8" stroke="KITred" arrow="normal/normal">
+452 20 m
+422 54 l
+</path>
+<path matrix="1 0 0 1 36 -82" stroke="KITblack70" rarrow="normal/normal">
+428 172 m
+428 140 l
+</path>
+<path matrix="1 0 0 1 0 -8" stroke="KITblack70" rarrow="normal/normal">
+456 102 m
+432 90 l
+</path>
+<path matrix="1 0 0 1 -46 -98" stroke="black" fill="KITorange70">
+28 -8 8 28 452 168 e
+</path>
+<path matrix="1 0 0 1 -16 -262" stroke="KITblack70" rarrow="normal/normal">
+450 324 m
+472 310 l
+</path>
+<path matrix="1 0 0 1 408 -22" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<path matrix="1 0 0 1 190 30" stroke="lightgray">
+320 208 m
+320 32 l
+</path>
+<path matrix="0 -1 1 0 390 472" stroke="lightgray">
+320 208 m
+320 32 l
+</path>
+<text matrix="1 0 0 1 0 4" transformations="translations" pos="16 212" stroke="black" type="minipage" width="164" height="31.2596" depth="19.061" valign="top">Vorberechnete Layout</text>
+<path matrix="1 0 0 1 32 -288" stroke="black" fill="KITred50">
+64 4 -4 64 188 360 e
+</path>
+<path matrix="1 0 0 1 32 -252" stroke="KITred" pen="fat">
+220 268 m
+64.4981 0 0 -64.4981 188 324 203.643 261.428 a
+</path>
+<path matrix="1 0 0 1 32 -252" stroke="KITred" pen="fat">
+176 260 m
+65.1153 0 0 -65.1153 188 324 152.788 269.226 a
+</path>
+<path matrix="1 0 0 1 124 140" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<text matrix="1 0 0 1 -4 -120" transformations="translations" pos="16 212" stroke="black" type="minipage" width="164" height="29.2065" depth="17.003" valign="top" style="default">Gruppe mit Ports</text>
+<path matrix="1 0 0 1 -248 32" stroke="KITblack70" rarrow="normal/normal">
+428 172 m
+428 140 l
+</path>
+<path stroke="KITblack70" rarrow="normal/normal">
+188 208 m
+220 192 l
+</path>
+<path matrix="1 0 0 1 -212 16" stroke="black" fill="KITorange70">
+28 -8 8 28 452 168 e
+</path>
+<path matrix="1 0 0 1 20 52" stroke="KITblack70" rarrow="normal/normal">
+192 124 m
+168 112 l
+</path>
+<path matrix="1 0 0 1 124 92" stroke="black" fill="KITcyanblue">
+48 80 m
+48 64 l
+64 64 l
+64 80 l
+h
+</path>
+<text layer="epsilon" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="120.18" depth="108.241" valign="top" style="item">Lösungsansatz:
+\begin{itemize}
+\item Ports an fester Position, simuliert durch Knoten
+\item Anker zur Mitte, Stärke $\alpha$
+\item Wahl des Anfangslayout
+\item Radius $R$ des Kreises bestimmen
+\begin{itemize}
+\item Ausreichend großer Parameter $\beta$\\
+ $R = \beta \cdot R&apos;$, wobei $R&apos;$ vorberechnete Größe
+\end{itemize}
+
+\end{itemize}
+</text>
+<text layer="zeta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="137.435" depth="125.538" valign="top" style="item">Lösungsansatz:
+\begin{itemize}
+\item Ports an fester Position, simuliert durch Knoten
+\item Anker zur Mitte, Stärke $\alpha$
+\item Wahl des Anfangslayout
+\item Radius $R$ des Kreises bestimmen
+\begin{itemize}
+\item Ausreichend großer Parameter $\beta$\\
+ $R = \beta \cdot R&apos;$, wobei $R&apos;$ vorberechnete Größe
+\item Iterativer Algorithmus
+\end{itemize}
+
+\end{itemize}
 </text>
 </page>
 <page title="Layoutanpassung bei Interaktion">
@@ -3516,5 +3804,31 @@ h
 <page title="Zusammenfassung">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
+</page>
+<page title="Backup-Slides">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Algorithmus zum bestimmen von $\beta$">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" matrix="1 0 0 1 2 0" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="19.1394" depth="6.909" valign="top" style="item">Ziel: Bestimmen von optimalem $\beta$ für Gruppe</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="159.343" depth="147.49" valign="top" style="itemize">\item Algorithmus:
+\begin{enumerate}
+\item Berechne Layout
+\item Wenn möglich verkleinere $R$
+\item Sonst erhöhe $\alpha$
+\item Prüfe Abbruchbedingungen
+\item Gehe zu 1.
+\end{enumerate}
+
+\begin{itemize}
+\item Abbruchbedingungen
+\begin{itemize}
+\item Veränderung in Iteration zu klein
+\item $\alpha$ zu stark im Verhältnis zu $|R-R&apos;|$
+\end{itemize}
+\end{itemize}
+</text>
 </page>
 </ipe>
