@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20090429144355" modified="D:20150214152254" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
+<ipe version="70005" creator="Ipe 7.1.6">
+<info created="D:20090429144355" modified="D:20150215231927" title="Kräftebasierter Ansatz für Layouts mit Gruppen" author="Jonathan Klawitter, Michael Vollmer, Mira, Sebastian Cacean, Sven Scheu, Cristian Voigt"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
@@ -218,13 +218,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
-<textsize name="small" value="\small"/>
-<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
+<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
+<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -2153,13 +2153,13 @@ h
 <textsize name="largebf" value="\bf\large"/>
 <textstretch name="normal" value="2.45"/>
 <textstretch name="large" value="2.45"/>
-<textstretch name="small" value="2.2"/>
-<textstretch name="tiny" value="2.8"/>
 <textstretch name="Large" value="2.2"/>
 <textstretch name="LARGE" value="2.2"/>
 <textstretch name="huge" value="2.2"/>
 <textstretch name="Huge" value="2.2"/>
+<textstretch name="small" value="2.2"/>
 <textstretch name="footnote" value="2"/>
+<textstretch name="tiny" value="2.8"/>
 <textstretch name="verytiny" value="2.3"/>
 <textstretch name="largebf" value="2.45"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
@@ -2275,7 +2275,6 @@ h
 <text matrix="1 0 0 1 -97 -293" pos="213 427" stroke="black" type="label" width="519.202" height="13.4464" depth="3.938" valign="baseline" size="small">\bf \name</text>
 <text layer="BACKGROUND" matrix="1 0 0 1 -213 -77" pos="213 427" stroke="black" type="label" width="0" height="0" depth="0" valign="baseline" size="Large">\bf\pressubtitle</text>
 <text layer="pagenumbers_format" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="31.6204" height="7.5578" depth="2.277" halign="center" valign="top" size="verytiny">{\bf [page]}</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 0}</text>
 <path layer="alpha" matrix="1 0 0 1 -2 4" fill="KITblack50">
 -28 212 m
 760 212 l
@@ -2305,6 +2304,7 @@ h
 <text matrix="1 0 0 1 -108 -12" transformations="translations" pos="124 104" stroke="darkred" type="minipage" width="468" height="43.7497" depth="31.605" valign="top">Todo: Titel finden, Namen vervollständigen (Edit $\rightarrow$ Document Properties)
 am besten nach Nachname/Vorname sortiert</text>
 <text matrix="1 0 0 1 51 -317" pos="213 427" stroke="black" type="label" width="153.512" height="13.0086" depth="3.806" valign="baseline" size="small">\bf \today</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 0}</text>
 </page>
 <page title="Beispielseite">
 <layer name="alpha"/>
@@ -2991,17 +2991,22 @@ decorator ipelet.  You can even define your own box types.
 </page>
 <page title="Problemszenario">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
 <text layer="alpha" matrix="1 0 0 1 -32 -16" transformations="translations" pos="48 400" stroke="black" type="label" width="369.213" height="16.2215" depth="4.998" valign="baseline">Motivation und Problembeschreibung</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.3692" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 5}</text>
 </page>
 <page title="Problemabstraktion">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
 <text layer="alpha" transformations="translations" pos="16 400" stroke="black" type="minipage" width="704" height="15.9568" depth="3.7485" valign="top">Keine Kantenfarbe, keine Inhalte in Boxen, ..</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 6}</text>
 </page>
 <page title="Konzept unseres Layoutalgorithmus">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
 <text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="133.907" depth="121.961" valign="top">Gruppen in Kugeln\\
 Kräftebasiertes Layout pro Stufe\\
 Layouts haben bis auf am Anfang festgelegte Ports, keinen Einfluss auf anere Stufen\\
@@ -3011,18 +3016,23 @@ top-down: Layout berechnen\\
 
 Verhalten:
 Anker und neue Größenberechnung, ..</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.3577" depth="0" halign="center" valign="top" size="verytiny">{\bf 7}</text>
 </page>
 <page title="Weitere Ansätze">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
 <text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="75.3056" depth="63.21" valign="top">Alles Kräfte, starke Anziehung innerhalb von Gruppen, keine Abschirmung\\
 
 Pro Gruppe nur 2 Ports, oben und unten\\
 Stufenlayout</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 8}</text>
 </page>
 <page title="Vergleich der Ansätze">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="5.8604" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 9}</text>
 </page>
 <page title="Algorithmus Teil 1 &quot;bottom-up&quot;">
 <layer name="alpha"/>
@@ -3030,11 +3040,12 @@ Stufenlayout</text>
 <layer name="gamma"/>
 <layer name="delta"/>
 <layer name="epsilon"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha epsilon" active="epsilon"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha epsilon pagenumbers_page" active="epsilon"/>
+<view layers="alpha beta pagenumbers_page" active="beta"/>
+<view layers="alpha beta gamma pagenumbers_page" active="gamma"/>
+<view layers="alpha beta gamma delta pagenumbers_page" active="delta"/>
 <path layer="epsilon" stroke="KITred">
 184 108 m
 160 120 l
@@ -3285,16 +3296,18 @@ h
 120 136 m
 120 64 l
 </path>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="11.7208" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 10}</text>
 </page>
 <page title="Algorithmus Teil 2 &quot;top-down&quot;">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha beta pagenumbers_page" active="beta"/>
+<view layers="alpha beta gamma pagenumbers_page" active="gamma"/>
+<view layers="alpha beta gamma delta pagenumbers_page" active="delta"/>
 <path layer="alpha" matrix="1 0 0 1 96 156" stroke="black" fill="KITcyanblue">
 48 80 m
 48 64 l
@@ -3494,6 +3507,7 @@ h
 </path>
 <text matrix="1 0 0 1 308 104" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.1836" depth="19.012" valign="top" style="center">4. Wiederhole\\ iterativ pro Stufe</text>
 <text layer="beta" matrix="1 0 0 1 60 -148" transformations="translations" pos="0 260" stroke="black" type="minipage" width="252" height="31.4335" depth="19.257" valign="top" style="center">2. Ports für\\ Gruppen festlegen</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="11.7208" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 11}</text>
 </page>
 <page title="Layout von Gruppen">
 <layer name="alpha"/>
@@ -3502,12 +3516,13 @@ h
 <layer name="delta"/>
 <layer name="epsilon"/>
 <layer name="zeta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha gamma" active="gamma"/>
-<view layers="alpha gamma delta" active="delta"/>
-<view layers="alpha epsilon" active="epsilon"/>
-<view layers="alpha zeta" active="zeta"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha beta pagenumbers_page" active="beta"/>
+<view layers="alpha gamma pagenumbers_page" active="gamma"/>
+<view layers="alpha gamma delta pagenumbers_page" active="delta"/>
+<view layers="alpha epsilon pagenumbers_page" active="epsilon"/>
+<view layers="alpha zeta pagenumbers_page" active="zeta"/>
 <text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="19.0341" depth="6.811" valign="top" style="item">Ziel: Layout einer Gruppe innerhalb Kreises mit festen Ports</text>
 <text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="70.7095" depth="58.604" valign="top" style="item">Lösungsansatz:
 \begin{itemize}
@@ -3791,27 +3806,79 @@ h
 
 \end{itemize}
 </text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="11.7208" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 12}</text>
 </page>
 <page title="Layoutanpassung bei Interaktion">
+<notes>Öffene Frage:
+Wie wird $\gamma$ bestimmt</notes>
 <layer name="alpha"/>
 <layer name="beta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<text layer="alpha" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="35.6181" depth="23.471" valign="top" style="item">Ziel: Anpassung des Layouts beim Öffnen oder Schließen einer Gruppe</text>
-<text layer="beta" matrix="0.999911 0.0133285 -0.0133285 0.999911 5.40014 -76.8689" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="18.9606" depth="6.762" valign="top" style="item">Lösungsansatz:
-</text>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page" active="beta"/>
+<view layers="alpha beta pagenumbers_page" active="beta"/>
+<text layer="alpha" matrix="0.846074 0 0 1 2.46281 0" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="21.1705" depth="8.9425" valign="top" style="item">Ziel: Anpassung des Layouts beim Öffnen einer Gruppe</text>
+<text layer="beta" matrix="0.999911 0.0133285 -0.0133285 0.999911 5.40014 -44.8689" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="181.55" depth="169.761" valign="top" style="item">Lösungsansatz:
+\begin{itemize}
+\item Inizialles Layouts $\rightarrow$ Positionen der Gruppen als Anker (Grundanker)
+\item Algorithmus:
+\begin{enumerate}
+\item Gruppe in ihrer vorberrechneten Konfiguration eingefügen
+\item Alle neu eingefügten Knoten werden mit Kanten an dem Grundanker der Gruppe befestigt
+\item Anwendung des kräftebasierten Algorithmus
+\item Überschreiten die Anker Kanten eine Länge $\gamma$, wird das Ergebnis von 1. - 3. verworfen und neu berechnet, mit dem Anker im Zentrum der Gruppe
+\end{enumerate}
+\end{itemize}</text>
+<text layer="gamma" matrix="1 0 0 1 544 16" transformations="translations" pos="-224 432" stroke="black" type="label" width="405.5" height="16.5522" depth="0.3675" valign="baseline">Anker - Grundanker
+
+Größe
+
+Portverhalten</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="11.7208" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 13}</text>
+</page>
+<page title="Layoutanpassung bei Interaktion">
+<notes>Öffene Frage:
+Wie wird $\gamma$ bestimmt</notes>
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page" active="beta"/>
+<view layers="alpha beta pagenumbers_page" active="beta"/>
+<text layer="alpha" matrix="0.846074 0 0 1 2.46281 0" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="19.1272" depth="6.909" valign="top" style="item">Ziel: Anpassung des Layouts beim Schließen einer Gruppe</text>
+<text layer="gamma" matrix="1 0 0 1 544 16" transformations="translations" pos="-224 432" stroke="black" type="label" width="405.5" height="16.5522" depth="0.3675" valign="baseline">Anker - Grundanker
+
+Größe
+
+Portverhalten</text>
+<text layer="beta" matrix="0.999911 0.0133285 -0.0133285 0.999911 5.40014 -44.8689" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="164.841" depth="153.003" valign="top" style="item">Lösungsansatz:
+\begin{itemize}
+\item Algorithmus:
+\begin{enumerate}
+\item Alle Knoten und Kanten der Gruppe werden entfernt und durch einen Gruppenknoten ersetzt.
+\item Größe der Knotens logarithmisch zur realen Größe der vorberechneten Gruppe und Position Abstandsminimal zu den enthaltenen Knoten
+\item Befestigung der Gruppe an ihrem Grundanker wenn Abstand $&lt; \gamma$, sonst an ihrem letzten Anker
+\item Anwendung des kräftebasierten Algorithmus
+\end{enumerate}
+\end{itemize}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="11.7208" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 14}</text>
 </page>
 <page title="Zusammenfassung">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="11.7208" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 15}</text>
 </page>
 <page title="Backup-Slides">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="11.7208" height="7.5578" depth="0.184" halign="center" valign="top" size="verytiny">{\bf 16}</text>
 </page>
 <page title="Algorithmus zum bestimmen von $\beta$">
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
 <text layer="alpha" matrix="1 0 0 1 2 0" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="19.1394" depth="6.909" valign="top" style="item">Ziel: Bestimmen von optimalem $\beta$ für Gruppe</text>
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 416" stroke="black" type="minipage" width="704" height="159.343" depth="147.49" valign="top" style="itemize">\item Algorithmus:
 \begin{enumerate}
@@ -3830,5 +3897,6 @@ h
 \end{itemize}
 \end{itemize}
 </text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 0.5 5.358" transformations="translations" pos="-13 -39" stroke="black" type="label" width="11.7208" height="7.5463" depth="0" halign="center" valign="top" size="verytiny">{\bf 17}</text>
 </page>
 </ipe>
