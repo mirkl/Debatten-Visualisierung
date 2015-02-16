@@ -1,0 +1,48 @@
+Visualizierung logischer Argumente 
+
+Layouts von Gruppen
+
+1. Wozu gibt es Layouts von Gruppen?
+
+	Fall a. Argument = Gruppe von Aussagen, bei denen eine Aussage auf eine andere kausal folgt.
+	=> Argumentationskette muss erkenntlich sein, damit der Nutzer sie prüfen kann.
+
+	Fall b. Der Nutzer macht die Zuweisung einer Aussage zu einer Gruppe frei => er kann auch Gruppen mit 'nur' inhaltlichem Zusammenhang bauen (u.a. kann er eine 'Gruppe' mit nur einer Aussage, bzw. einem Knoten, bauen).
+
+	v.a. im Fall a. liegt der Fokus auf den Beziehungen zwischen Knoten. 
+	-> Vorteil des kräftebasierten Algorithmus: Verteilung der Knoten durch Abstossung der Kanten, welche die Beziehungen repräsentieren, sodass das gesamte Layout auf den Beziehungen basiert.
+
+	
+2. Kriterien für Layouts von Gruppen
+
+i. 	Übersichtlichkeit
+		Ausreichender Abstand zwischen Aussagen eines Arguments.
+		Ausreichender Abstand zwischen Argumenten (mehrere Gruppen-Ebenen).
+		Keine zu grossen Darstellungen insgesamt.
+	
+	-> Entscheidungen: 
+		+	Offene Gruppe mit kreisförmiger Anordnung erzielt effiziente räumliche Verteilung (wenig Leerräume) 
+		+	Kräftebasierte Algorithmus produziert vergleichsweise symmetrischen Graphen => maximale Nutzung der Gesamtfläche
+		+	Berechnung der notwendigen Fläche z.T. ab der tiefsten Gruppe (bottom-up) 
+			
+ii. Begrenztheit des menschlichen Gedächtnis
+
+		Nutzer merkt sich analytische Zusammenhänge anhand der räumlichen Anordnung 
+		=> Stabilität bei inkrementellen Änderungen erwünscht, insbes. bei Kollaboration zw. mehreren Nutzern.
+		
+		Widerspruch zum Kriterium der Übersichtlichkeit, insofern inkrementell hinzugefügt wird!
+		
+	-> Kompromisse:
+
+		+ 	'Natürliche' Darstellung sobald das Kräfte-Equilibrium erreicht wird 
+			=> intuitiver, d.h. verständlicher, merkbarer & Änderungen vorsehbarer.
+		+-	Die Grösse eines Knotens einer geschlossenen Gruppe ist abhängig von der Menge seines Inhalts 
+			=> vorausgesetzt, der Nutzer schreibt die (ihm) wichtigsten Argumente zuerst, und fügt eine signifikante Menge an anderen Gruppen bald hinzu, kann er die wichtigsten anhand ihrer Grösse gut wiedererkennen (insbes. wenn sie relativ lange, bzw. gross, sind).
+		+ Ports sorgen für stabilere Anordnung.	
+			
+iii. Flexible 'Detail-Tiefe'
+
+	-> Kompromiss mit Fokus-Ansicht: 
+		'Gruppen' sind per default geschlossen (Übersichtlichkeit);
+		erst beim Anklicken sieht Nutzer Detail (Prüfung der Argumente/ Anschauen des inhaltlichen Zusammenhangs).	
+		
